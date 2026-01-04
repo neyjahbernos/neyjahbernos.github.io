@@ -1,0 +1,689 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.en-tete {
+    top : 0vh;
+    left : 0vh;
+    width: 218.5vh;
+    height: 118vh;
+    position: relative;
+    z-index: 4;       
+}
+
+.footer-p {
+    position:absolute;
+    text-align: center;
+    top : 705vh;
+    right : 7%;
+    z-index: 19;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #3f2a02;
+    font-weight: 400;
+    font-variation-settings: "wght" 400;
+}
+
+.profil-boutton {
+    position: fixed;
+    margin-top: 1%;
+    left: 4%;
+    z-index: 19;
+    width: 15vh;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+    transition: 1s ease;
+}
+
+.profil-boutton:hover {
+    transform: scale(1.1);
+}
+
+.barre-gauche-p {
+    position:fixed;
+    text-align: center;
+    top : 4vh;
+    left : 12%;
+    z-index: 19;
+     font-family: "ohno-softie-variable", sans-serif;
+    color: #3f2a02;
+    font-weight: 400;
+    font-variation-settings: "wght" 400;
+}
+
+.button-contact {
+    position: fixed;
+    z-index: 17;
+    top: 6vh;
+    left: 48vh;
+    font-size: 100%;
+    cursor: pointer;
+    border : none;
+    background-color: none;
+    background: none;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #3f2a02;
+    font-weight: 400;
+    font-variation-settings: "wght" 400;
+    
+}
+
+.button-cv {
+    position: fixed;
+    z-index: 17;
+    top: 6vh;
+    left: 98vh;
+    font-size: 100%;
+    cursor: pointer;
+    border : none;
+    background-color: none;
+    background: none;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #3f2a02;
+    font-weight: 400;
+    font-variation-settings: "wght" 400;
+    
+}
+
+.button-work {
+    position: fixed;
+    z-index: 17;
+    top: 6vh;
+    left: 140vh;
+    font-size: 100%;
+    cursor: pointer;
+    border : none;
+    background-color: none;
+    background: none;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #3f2a02;
+    font-weight: 400;
+    font-variation-settings: "wght" 400;
+    
+}
+
+.button-about {
+    position: fixed;
+    z-index: 18;
+    top: 6vh;
+    right: 20vh;
+    font-size: 100%;
+    cursor: pointer;
+    border : none;
+    background-color: none;
+    background: none;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #3f2a02;
+    font-weight: 400;
+    font-variation-settings: "wght" 400;
+}
+
+.projet-branding {
+    position: absolute;
+    transition: 0.5s ease;
+    width: 50vh;
+    height: 40vh;
+    top: 575vh;
+    left: 25%;
+    z-index: 10;
+}
+
+.projet-branding:hover {
+    transform: translateY(-20px);
+}
+
+.projets-illustration {
+    position: absolute;
+    transition: 0.50s ease;
+    width: 52.5vh;
+    height: 40vh;
+    top: 575vh;
+    left: 51.5%;
+    z-index: 10;
+}
+
+.projets-illustration:hover {
+    transform: translateY(-20px);
+}
+
+.projetA-digitalart {
+    position: absolute;
+    transition: 0.5s ease;
+    width: 49vh;
+    height: 40vh;
+    top: 618vh;
+    left: 51%;
+    z-index: 10;
+}
+.projetA-digitalart:hover {
+    transform: translateY(-20px);
+}
+
+
+.projetB-coding {
+    position: absolute;
+    transition: 0.5s ease;
+    width: 49.5vh;
+    height: 40vh;
+    top: 618vh;
+    left: 25%;
+    z-index: 10;
+}
+.projetB-coding:hover {
+    transform: translateY(-20px);
+}
+
+.first-banniere {
+    position: relative;
+    width: 218.5vh;
+    height: 61;
+    left: 0%;
+    top: 980px;
+    z-index: 10;
+}
+
+.firstbannieretext {
+    position: absolute;
+    width: 32%;
+    top : 540px;
+    left: 29%;
+    z-index: 11;
+}
+
+.img-banniere {
+    position: relative;
+    width: 100%;
+    top: 60vh;
+    left : 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.fond-motif {
+    position: relative;
+    z-index : 2;
+    top: 1020px;
+    width: 100%;
+
+}
+
+.banniere-last {
+    position : absolute;
+    width: 218vh;
+    height: 20vh;
+    top: 670vh;
+    left: 0%;
+    z-index: 10;
+}
+
+.lastbanniere {
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    left: 0%;
+    z-index: 10;
+}
+
+.github-icon {
+    position: absolute;
+    top: 23vh;
+    left : 40%;
+    width: 5%;
+    z-index: 12;
+    transition: 0.4s ease;
+}
+
+.github-icon:hover {
+    transform: translateY(-30px);
+}
+
+.ln-icon {
+    position: absolute;
+    top: 23vh;
+    left : 46.6%;
+    width: 4.9%;
+    height: 54%;;
+    z-index: 13;
+    transition: 0.4s ease;
+}
+
+.insta-icon {
+    position: absolute;
+    top: 23vh;
+    left : 53%;
+    width: 4.9%;
+    height: 54%;;
+    z-index: 13;
+    transition: 0.5s ease;
+}
+.insta-icon:hover {
+    transform: translateY(-30px);
+}
+
+.ln-icon:hover {
+    transform: translateY(-30px);
+}
+
+.skillcontact {
+   position: absolute;
+    scroll-margin-top: 300px;
+    width: 100vh;
+    height: 65vh;
+    top: 410vh;
+    left: 60vh;
+    z-index: 16;
+    transition: 0.5s ease; 
+}
+
+.Skill-window {
+    position: absolute;
+    width: 100%;
+    top: 0vh;
+    left: 0vh;
+    z-index: 16;
+}
+
+.numero-telephone {
+    position: absolute;
+    top : 24vh;
+    left : 14vh;
+    z-index: 17;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #3c2902;
+    font-weight: 500;
+    font-variation-settings: "wght" 400; 
+}
+
+.email1 {
+    position: absolute;
+    top : 30vh;
+    left : 14vh;
+    z-index: 17;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #3c2902;
+    font-weight: 500;
+    font-variation-settings: "wght" 400; 
+}
+
+.skillcontact:hover {
+    transform: scale(1.01);
+}
+
+.first-window {
+    position: relative;
+    top : 55vh;
+    width: 59%;
+    height: auto;
+    margin: 0 auto;
+    z-index: 15;
+    transition: 0.5s ease;
+}
+
+.first-window:hover {
+    transform: scale(1.009);
+}
+
+.first-window img {
+    scroll-margin-bottom: 150px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-first-window {
+    position: absolute;
+    top: 47%;
+    left: 440px;
+    font-size: 120%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #2b1e03;
+    font-weight: 400;
+    font-variation-settings: "wght" 400; 
+    z-index: 16;
+}
+
+.first-window-entete {
+    position : absolute;
+    text-align : center;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #2b1e03;
+    font-weight: 400;
+    font-variation-settings: "wght" 400; 
+    z-index : 19;
+    left : 39%;
+    top : -10px;
+}
+
+.bandetournante {
+    position: absolute;
+    top: 850px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 12;
+}
+
+.bandetournante::-webkit-scrollbar {
+    display: none;
+}
+
+.word {
+   flex: 0 0 auto;
+
+  padding: 0.6em 1.2em;
+  border: 1.5px solid #483204;  
+  border-radius: 9999px;       
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "ohno-softie-variable", sans-serif;
+  font-weight: 400;
+  color: #2b1e03;
+
+  white-space: nowrap;
+}
+
+.all-groupstext {
+   display: flex;
+  width: max-content;
+  animation: spintext 29s linear infinite;
+  gap : 4em;
+}
+
+.grouptext {
+    display: flex;
+    gap: 4em;
+}
+
+@keyframes spintext {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+
+.carrouseltournant {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    margin: 100px auto;
+    overflow-x: auto;
+}
+
+.carrouseltournant::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 200px;
+    background: #efdbbe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+  display: block;
+}
+
+.all-groups {
+    display: flex;
+    gap: 2em;
+    animation: spin 25s linear infinite;
+}
+
+.group {
+    display: flex;
+    gap: 2em;
+}
+
+@keyframes spin {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.little-rounded-rect {
+    position: fixed;
+    top: 90%;
+    left: 17vh;
+    transform: translate(-50%, -50%);
+    width: 27vh;
+    height: 3vh;
+    background: #c59f7e6b;
+    border-radius: 9999px;
+    z-index: 10;
+}
+
+.projets-en-cours {
+    top : -2.2vh;
+    left: 5vh;
+    position: relative;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #2b1e03;
+    font-weight: 400;
+    font-variation-settings: "wght" 400; 
+}
+
+.online-round {
+    position: fixed;
+    top : 90%;
+    left: 28vh;
+    width: 1vh;
+    height: 1vh;
+    transform: translate(-50%, -50%);
+    background: #218931;
+    border-radius: 50%;
+    z-index: 11;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 650vh;
+    background-image: url("../PORTFO_FOND_3.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 50;
+}
+
+.burger {
+    position: fixed;
+    top: 38px;
+    right: 70px;
+    width: 40px;
+    height: 57px;
+    cursor: pointer;
+    z-index: 60;
+}
+
+.burger span {
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 20%;
+    background: #4f2c03;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    position: fixed;
+    top: 0; right: -150%;
+    width: 20%;
+    border-radius: 10%;
+    height: 50vh;
+    background: #efdbbe;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    transition: right 0.6s ease;
+    z-index: 40;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    right: 60px;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #3f2a02;
+}
+
+.menu.active {
+    right: 1.25%;
+}
+
+
+.barre-gauche-button {
+    position : absolute;
+    top : 30vh;
+    left : 80px;
+    z-index: 13;
+    cursor: pointer;
+}
+
+.round-profile {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #efdbbe;
+    border-radius: 50%;
+    z-index: 14;
+    align-items: flex-end;
+    position: absolute;
+    top: 52vh;
+    left: 110vh;
+    width: 50vh;
+    height: 50vh;
+    transform: translate(-50%, -50%);
+    z-index: 14;
+}
+
+.round-mask {
+   position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #efdbbe;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 14;
+    border-color:#4f2c03;
+    border: #4f2c03;
+
+}
+
+.photo-profile {
+   position: absolute;
+    bottom: -75%;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: auto;
+    z-index: 15;
+}
+
+
+.portfolio-text {
+    position: absolute;
+    width: 200vh;
+    height: 50vh;
+    top: 5vh;
+    right: 10vh;
+    z-index: 18;
+}
+
+.firstpopup {
+    position: absolute;
+    width: 47vh;
+    top : 255vh;
+    left : 20vh;
+    z-index: 5;
+    transition: 0.5s ease;
+}
+
+.secondpopup {
+    position: absolute;
+    width: 47vh;
+    top : 309vh;
+    left : 74vh;
+    z-index: 5;
+    transition: 0.5s ease;
+}
+
+.thirdpopup {
+    position: absolute;
+    width: 47vh;
+    top : 271vh;
+    left : 136vh;
+    z-index: 5;
+    transition: 0.5s ease;
+}
+
+.thirdpopup:hover {
+   transform: translateY(-10px);
+}
+
+.firstpopup:hover {
+   transform: translateY(-10px);
+}
+
+.secondpopup:hover {
+   transform: translateY(-10px);
+}
+
+.Fil_de_l_educ {
+    position: relative;
+    width: 216vh;
+    height: 120vh;
+    top : 77vh;
+}
+
+.numero {
+    position:  absolute;
+    top : 4890px;
+    left : 30px;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #382402;
+    font-weight: 400;
+    font-variation-settings: "wght" 400; 
+    z-index: 10;
+}
+
+.email {
+    position:  absolute;
+    top : 4910px;
+    left : 30px;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #382402;
+    font-weight: 400;
+    font-variation-settings: "wght" 400; 
+    z-index: 10;
+}

@@ -1,0 +1,387 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.profil-boutton {
+    position: fixed;
+    margin-top: 1%;
+    left: 4%;
+    z-index: 18;
+    width: 15vh;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+    transition: 1s ease;
+}
+
+.profil-boutton:hover {
+    transform: scale(1.1);
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 820vh;
+    background-image: url("../PORTFO_FOND_3.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+}
+
+.banniere {
+    position: absolute;
+    width: 218.81vh;
+    top : 0vh;
+    z-index: 2;
+}
+
+.banniere-p {
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    left : 16%;
+    top : 15vh;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #2b1e03;
+    font-weight: 400;
+}
+
+.banniere-img {
+   position: absolute;
+    width: 100%;
+    top : 0vh;
+    z-index: 10;
+}
+
+.panneaux-img {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top : 200px;
+    z-index: 1;
+}
+
+.affiche1-img {
+    position: absolute;
+    width: 35%;
+    left: 50px;
+    top : 1430px;
+    display: flex;
+    z-index: 2;
+}
+
+.affiche2img {
+    position: absolute;
+    width: 41.6%;
+    left: 560px;
+    top : 1423px;
+    z-index: 3;
+}
+
+.storyimg {
+    position: absolute;
+    width: 21.6%;
+    left: 1100px;
+    top : 1723px;
+    z-index: 3;
+    transition: 3s ease;
+}
+
+.storyimg:hover {
+    transform: translateX(10px);
+    transform: rotate(15deg);
+}
+
+.fleche1 {
+    position: absolute;
+    z-index: 11;
+    top : 2250px;
+    left : 45%;
+    width: 7%;
+}
+
+.fleche2 {
+    position: absolute;
+    z-index: 11;
+    top : 2600px;
+    left : 76%;
+    width: 7%;
+    rotate: -10deg;
+}
+
+.bloc1 {
+    position: absolute;
+    width: 30%;
+    height: 4%;
+    left: 10%;
+    top: 2300px;
+    z-index: 10;
+    transition: 2s ease;
+}
+
+.textfirst {
+    position: absolute;
+    top : 26px;
+    left: 15%;
+    text-align: center;
+    z-index: 12;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #2b1e03;
+    font-weight: 400;
+}
+.onglet {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0px;
+    z-index: 10;
+}
+
+.bloc1:hover {
+ transform: translateY(-20px);
+}
+
+.bloc2 {
+    position: absolute;
+    width: 30%;
+    height: 4%;
+    left: 43%;
+    top: 2450px;
+    z-index: 10;
+    transition: 2s ease;
+}
+
+.textsecond {
+    position: absolute;
+    top : 26px;
+    left: 5%;
+    text-align: center;
+    z-index: 12;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #2b1e03;
+    font-weight: 400;
+}
+
+.onglet2 {
+   position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0px;
+    z-index: 10;
+}
+
+.bloc2:hover {
+    transform: translateY(-20px);
+}
+
+
+.bloc3 {
+    position: absolute;
+    width: 30%;
+    height: 4%;
+    left: 34%;
+    top: 4500px;
+    z-index: 10;
+    transition: 2s ease;
+}
+
+.textthird {
+    position: absolute;
+    top : 26px;
+    left: 28%;
+    text-align: center;
+    z-index: 12;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #2b1e03;
+    font-weight: 400;
+}
+
+.onglet3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0px;
+    z-index: 10;
+}
+
+.bloc3:hover {
+ transform: translateY(-20px);
+}
+
+.youtubeimg {
+    position: absolute;
+    width: 21.6%;
+    left: 500px;
+    top : 2700px;
+    z-index: 3;
+    transition: 1s ease;
+}
+
+.youtubeimg:hover {
+transform: translateY(-20px);
+}
+
+
+.spotifyimg {
+    position: absolute;
+    width: 21.6%;
+    left: 730px;
+    top : 2750px;
+    z-index: 4;
+    transition: 1s ease;
+}
+
+.spotifyimg:hover {
+transform: translateY(-20px);
+}
+
+.pan2img {
+    position: relative;
+    width: 60%;
+    left: 40%;
+    top : 1600px;
+    border-radius: 3%;
+    z-index: 1;
+}
+
+.miniature1img {
+    position: absolute;
+    width: 35.6%;
+    left: 30px;
+    top : 3305px;
+    z-index: 3;
+    border-radius: 5%;
+    transition: 1s ease;
+}
+
+.miniature1img:hover {
+   transform: scale(1.03);
+}
+
+
+.miniature2img {
+    position: absolute;
+    width: 35.6%;
+    left: 30px;
+    top : 3670px;
+    z-index: 3;
+    border-radius: 5%;
+    transition: 1s ease;
+}
+
+.miniature2img:hover {
+   transform: scale(1.03);
+}
+
+
+.miniature3img {
+    position: absolute;
+    width: 35.6%;
+    left: 30px;
+    top : 4017px;
+    z-index: 3;
+    border-radius: 5%;
+    transition: 1s ease;
+}
+
+.miniature3img:hover {
+   transform: scale(1.03);
+}
+
+.montageimg {
+    position: absolute;
+    width: 75.6%;
+    left: 30px;
+    top : 4817px;
+    z-index: 3;
+    transition: 1s ease;
+}
+
+.mockupimg {
+    position: absolute;
+    width: 28.6%;
+    left: 1030px;
+    top : 4990px;
+    z-index: 4;
+    transition: 3s ease;
+}
+
+.mockupimg:hover {
+    transform: translateY(-20px);
+    transform: rotate(11deg);
+}
+
+.banniere-last {
+    position : absolute;
+    width: 218vh;
+    height: 20vh;
+    top: 5800px;
+    left: 0%;
+    z-index: 10;
+}
+
+.lastbanniere {
+    position: absolute;
+    width: 100%;
+    top: 0vh;
+    left: 0%;
+    z-index: 10;
+}
+.github-icon {
+    position: absolute;
+    top: 12vh;
+    left : 40%;
+    width: 5%;
+    z-index: 12;
+    transition: 0.4s ease;
+}
+
+.github-icon:hover {
+    transform: translateY(-30px);
+}
+
+.ln-icon {
+    position: absolute;
+    top: 12vh;
+    left : 46.6%;
+    width: 4.9%;
+    height: 54%;;
+    z-index: 13;
+    transition: 0.4s ease;
+}
+
+.insta-icon {
+    position: absolute;
+    top: 12vh;
+    left : 53%;
+    width: 4.9%;
+    height: 54%;;
+    z-index: 13;
+    transition: 0.5s ease;
+}
+.insta-icon:hover {
+    transform: translateY(-30px);
+}
+
+.ln-icon:hover {
+    transform: translateY(-30px);
+}
+
+.footer-p {
+    position:absolute;
+    text-align: center;
+    top : 6050px;
+    right : 7%;
+    z-index: 19;
+     font-family: "ohno-softie-variable", sans-serif;
+    color: #3f2a02;
+    font-weight: 400;
+    font-variation-settings: "wght" 400;
+}

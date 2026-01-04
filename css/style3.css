@@ -1,0 +1,248 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.profil-boutton {
+    position: fixed;
+    margin-top: 1%;
+    left: 4%;
+    z-index: 18;
+    width: 15vh;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+    transition: 1s ease;
+}
+
+.profil-boutton:hover {
+    transform: scale(1.1);
+}
+
+.logo-fixe {
+    position: fixed;
+    width: 6%;
+    right: 1%;
+    top: 83%;
+    z-index: 20;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 320vh;
+    background-image: url("../PORTFO_FOND_3.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+}
+
+.banniere {
+    position: absolute;
+    width: 218.81vh;
+    top : 0vh;
+    z-index: 2;
+}
+
+.Agatetitre {
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    left : 46.7%;
+    top : 1vh;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #2b1e03;
+    font-weight: 400;
+}
+
+.banniere-p {
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    left : 25%;;
+    top : 9vh;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #2b1e03;
+    font-weight: 400;
+}
+
+.banniere-img {
+   position: absolute;
+    width: 100%;
+    top : 0vh;
+    z-index: 3;
+}
+
+.titre {
+    position: absolute;
+    width: 100%;
+    top : 30vh;
+}
+.titre1 {
+ position: absolute;
+    width: 100%;
+    top : 153vh;
+}
+.titre2 {
+     position: absolute;
+    width: 100%;
+    top : 276vh;
+}
+.titre3 {
+   position: absolute;
+    width: 100%;
+    top : 399vh;  
+}
+.titre4 {
+  position: absolute;
+    width: 100%;
+    top : 522vh;   
+}
+.titre5 {
+  position: absolute;
+    width: 100%;
+    top : 645vh;   
+}
+.titre6 {
+  position: absolute;
+    width: 100%;
+    top : 768vh;   
+}
+.titre7 {
+  position: absolute;
+    width: 100%;
+    top : 891vh;   
+}
+.titre8 {
+  position: absolute;
+    width: 100%;
+    top : 1014vh;   
+}
+.titre9 {
+ position: absolute;
+    width: 100%;
+    top : 1137vh;    
+}
+.titre10 {
+ position: absolute;
+    width: 100%;
+    top : 1260vh;    
+}
+
+
+
+.titre11 {
+ position: absolute;
+    width: 100%;
+    top : 1383vh;    
+}
+.titre12 {
+ position: absolute;
+    width: 100%;
+    top : 1526vh;    
+}
+.titre13 {
+ position: absolute;
+    width: 100%;
+    top : 1639vh;    
+}
+.titre14 {
+ position: absolute;
+    width: 100%;
+    top : 1769vh;    
+}
+.titre15 {
+ position: absolute;
+    width: 100%;
+    top : 1901vh;    
+}
+.titre16 {
+ position: absolute;
+    width: 100%;
+    top : 2045vh;    
+}
+.titre17 {
+ position: absolute;
+    width: 100%;
+    top : 2186vh;    
+}
+.titre18 {
+ position: absolute;
+    width: 100%;
+    top : 2330vh;    
+}
+.titre19 {
+ position: absolute;
+    width: 100%;
+    top : 2470vh;    
+}
+.banniere-last {
+    position : absolute;
+    width: 218.5vh;
+    height: 20vh;
+    top: 18120px;
+    left: 0%;
+    z-index: 15;
+}
+
+.lastbanniere {
+    position: absolute;
+    width: 100%;
+    top: 0vh;
+    left: 0%;
+    z-index: 15;
+}
+.github-icon {
+    position: absolute;
+    top: 12vh;
+    left : 40%;
+    width: 5%;
+    z-index: 17;
+    transition: 0.4s ease;
+}
+
+.github-icon:hover {
+    transform: translateY(-30px);
+}
+
+.ln-icon {
+    position: absolute;
+    top: 12vh;
+    left : 46.6%;
+    width: 4.9%;
+    height: 54%;;
+    z-index: 17;
+    transition: 0.4s ease;
+}
+
+.insta-icon {
+    position: absolute;
+    top: 12vh;
+    left : 53%;
+    width: 4.9%;
+    height: 54%;;
+    z-index: 17;
+    transition: 0.5s ease;
+}
+.insta-icon:hover {
+    transform: translateY(-30px);
+}
+
+.ln-icon:hover {
+    transform: translateY(-30px);
+}
+
+.footer-p {
+    position:absolute;
+    text-align: center;
+    top : 18360px;
+    right : 7%;
+    z-index: 19;
+     font-family: "ohno-softie-variable", sans-serif;
+    color: #3f2a02;
+    font-weight: 400;
+    font-variation-settings: "wght" 400;
+}

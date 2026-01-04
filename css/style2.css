@@ -1,0 +1,325 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.profil-boutton {
+    position: fixed;
+    margin-top: 1%;
+    left: 4%;
+    z-index: 18;
+    width: 15vh;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+    transition: 1s ease;
+}
+
+.profil-boutton:hover {
+    transform: scale(1.1);
+}
+
+
+body {
+    position: relative;
+    width: 100%;
+    height: 320vh;
+    background-image: url("../PORTFO_FOND_3.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.banniere {
+    position: absolute;
+    width: 218.5vh;
+    height: 50vh;
+    z-index: 3;
+}
+
+.titre {
+    position : absolute;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #422702;
+    font-weight: 400;
+    left: 10%;
+    top: 10vh;
+    text-align: center;
+    font-variation-settings: "wght" 400;
+    z-index : 10;
+}
+
+.video4 {
+    position: absolute;
+}
+
+.Banniere-haut {
+    position: absolute;
+    bottom : 1vh;
+    width: 100%;
+    z-index: 3;
+}
+
+.Fil-dev {
+    position: absolute;
+    top: 43vh;
+    width: 90.5vh;
+    height: 250vh;
+    left: 30%;
+    z-index: 2;
+}
+
+.Window1 {
+    position: absolute;
+    top: 70vh;
+    left: 0px;
+    z-index: 2;
+    width: 150vh;
+    height: 5vh ;
+    transition: 1s ease;
+}
+
+.minishell-window {
+    position : relative;
+    top : 0vh;
+    width: 60%;
+    left: 40px;
+    z-index: 3;
+    transition: 1s ease;
+}
+
+.video1 {
+    position: absolute; 
+    width: 55%;
+    top: 35px;
+    left: 6%;
+    border-radius: 15px;
+    object-fit: cover;
+    z-index: 3; 
+    pointer-events: none;
+}
+
+.Window1:hover {
+    transform: translateX(-15px);
+}
+
+.ombre-firstwindow {
+    position: absolute;
+    top : 75vh;
+    left: 70px;
+    width: 90vh;
+    z-index: 1 ;
+}
+
+.info-window1 {
+    position: absolute;
+    top: 120.5vh;
+    left: 22.5%;
+    z-index: 8;
+    width: 100vh;
+    height: 5vh ;
+    transition: 1s ease;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #422702;
+    font-weight: 400;
+    font-variation-settings: "wght" 400; 
+}
+
+.text-info1 {
+    position: absolute;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #492f01;
+    font-weight: 400;
+    font-variation-settings: "wght" 400; 
+    top: 4vh;
+    left: 6vh;
+    z-index: 4;
+}
+
+.info-minishellwindow {
+    position: absolute;
+    top : 0vh;
+    left: 0vh;
+    width: 70vh;
+    z-index: 3;
+    transition: 1s ease;
+}
+
+.info-window1:hover {
+    transform: translateX(-15px);
+}
+
+.ombre-infowindow {
+    position: absolute;
+    top : 123vh;
+    left: 366px;
+    width: 70vh;
+    z-index: 1 ;
+}
+
+.Window2 {
+    position: absolute;
+    top: 176.5vh;
+    left: 30%;
+    z-index: 2;
+    width: 100vh;
+    height: 5vh ;
+    transition: 1s ease;
+}
+
+.Mini-jeu-window {
+    position: relative;
+    top: 0vh; 
+    left: 300px;
+    width: 95%;
+    z-index: 2;
+
+}
+
+.Window2:hover {
+    transform: translateX(-15px);
+}
+
+.info-window2 {
+    position: absolute;
+    top: 230.5vh;
+    left: 28%;
+    z-index: 2;
+    width: 100vh;
+    height: 5vh ;
+    transition: 1s ease;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #4d2b01;
+    font-weight: 400;
+    font-variation-settings: "wght" 400; 
+}
+
+.text-info {
+    position: absolute;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #532b03;
+    font-weight: 400;
+    font-variation-settings: "wght" 400; 
+    top: 4vh;
+    left: 6vh;
+    z-index: 4;
+}
+
+.video {
+    position: absolute; 
+    width: 70%;
+    top: 5vh;
+    left: 380px;
+    border-radius: 15px;
+    object-fit: cover;
+    z-index: 3; 
+    pointer-events: none;
+}
+
+.info-minijeuwindow {
+    position: absolute;
+    top : 120vh;
+    left: 50vh;
+    width: 70vh;
+    z-index: 4;
+    transition: 1s ease;
+}
+
+.info-minijeuwindow {
+    position: absolute;
+    top : 0vh;
+    left: 0px;
+    width: 70vh;
+    z-index: 4 ;
+}
+
+.info-window2:hover {
+    transform: translateX(-15px);
+}
+
+.ombre-mini-jeuwindow {
+   position: absolute;
+    top : 232.5vh;
+    left: 450px;
+    width: 70vh;
+    z-index: 1 ;
+}
+
+.ombre-infojeuwindow {
+    position: absolute;
+    top : 185.5vh;
+    left: 821px;
+    width: 90vh;
+    z-index: 1 ;
+}
+
+
+.banniere-last {
+    position : absolute;
+    width: 218vh;
+    height: 20vh;
+    top: 2000px;
+    left: 0%;
+    z-index: 10;
+}
+
+.lastbanniere {
+    position: absolute;
+    width: 100%;
+    top: 0vh;
+    left: 0%;
+    z-index: 10;
+}
+.github-icon {
+    position: absolute;
+    top: 12vh;
+    left : 40%;
+    width: 5%;
+    z-index: 12;
+    transition: 0.4s ease;
+}
+
+.github-icon:hover {
+    transform: translateY(-30px);
+}
+
+.ln-icon {
+    position: absolute;
+    top: 12vh;
+    left : 46.6%;
+    width: 4.9%;
+    height: 54%;;
+    z-index: 13;
+    transition: 0.4s ease;
+}
+
+.insta-icon {
+    position: absolute;
+    top: 12vh;
+    left : 53%;
+    width: 4.9%;
+    height: 54%;;
+    z-index: 13;
+    transition: 0.5s ease;
+}
+.insta-icon:hover {
+    transform: translateY(-30px);
+}
+
+.ln-icon:hover {
+    transform: translateY(-30px);
+}
+
+.footer-p {
+    position:absolute;
+    text-align: center;
+    top : 2260px;
+    right : 7%;
+    z-index: 19;
+     font-family: "ohno-softie-variable", sans-serif;
+    color: #3f2a02;
+    font-weight: 400;
+    font-variation-settings: "wght" 400;
+}

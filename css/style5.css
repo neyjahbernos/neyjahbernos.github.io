@@ -1,0 +1,269 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.profil-boutton {
+    position: fixed;
+    margin-top: 1%;
+    left: 4%;
+    z-index: 18;
+    width: 15vh;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+    transition: 1s ease;
+}
+
+.profil-boutton:hover {
+    transform: scale(1.1);
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 320vh;
+    background-image: url("../PORTFO_FOND_3.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+}
+
+.banniere {
+    position: absolute;
+    width: 218.81vh;
+    top : 0vh;
+    z-index: 2;
+}
+
+.banniere-p {
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    left : 10%;
+    top : 6vh;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #2b1e03;
+    font-weight: 400;
+}
+
+.banniere-img {
+   position: absolute;
+    width: 100%;
+    top : 0vh;
+    z-index: 3;
+}
+
+.first-window {
+    position: absolute;
+    top : 300px;
+    width: 80vh;
+    transition: 2s ease;
+}
+
+.bloc {
+    position: relative;
+    top : 50vh;
+    left : 30%;
+    width: 80vh;
+    height: 70vh;
+}
+
+.first-draw {
+    position: absolute;
+    top : 54vh;
+    left: 225px;
+    width: 79%;
+    z-index : 4;
+    border-radius: 5%;
+}
+
+.first-window:hover {
+    transform: translateX(20px);
+}
+
+.second-window {
+    position: absolute;
+    top : 1150px;
+    left : 52%;
+    width: 80vh;
+    height: 70vh;
+    transition: 2s ease;
+}
+
+.bloc2 {
+    position: absolute;
+    top : 0vh;
+    left : 0%;
+    width: 100%;
+}
+
+.second-draw {
+    position: absolute;
+    top : 2.5vh;
+    left: 63px;
+    width: 75%;
+    z-index : 4;
+    border-radius: 5%;
+}
+
+.second-window:hover {
+    transform: translateX(20px);
+}
+
+.third-window {
+    position: absolute;
+    top : 1600px;
+    left : 10%;
+    width: 80vh;
+    height: 70vh;
+    transition: 2s ease;
+}
+
+.bloc3 {
+    position: absolute;
+    top : 0vh;
+    left : 0%;
+    width: 100%;
+}
+
+.third-draw {
+    position: absolute;
+    top : 2.5vh;
+    left: 62px;
+    width: 75%;
+    z-index : 4;
+    border-radius: 5%;
+}
+
+.third-window:hover {
+    transform: translateX(20px);
+}
+
+.fourth-window {
+    position: absolute;
+    top : 2050px;
+    left : 52%;
+    width: 80vh;
+    height: 70vh;
+    transition: 2s ease;
+}
+
+.bloc4 {
+    position: absolute;
+    top : 0vh;
+    left : 0%;
+    width: 100%;
+}
+
+.first-animation {
+    position: absolute;
+    top : 2.5vh;
+    left: 62px;
+    width: 75%;
+    z-index : 4;
+    border-radius: 5%;
+}
+
+.fourth-window:hover {
+    transform: translateX(20px);
+}
+
+.fifth-window {
+    position: absolute;
+    top : 2480px;
+    left : 10%;
+    width: 80vh;
+    height: 70vh;
+    transition: 2s ease;
+}
+
+.bloc5 {
+    position: absolute;
+    top : 0vh;
+    left : 0%;
+    width: 100%;
+}
+
+.second-animation {
+    position: absolute;
+    top : 2.5vh;
+    left: 62px;
+    width: 75%;
+    z-index : 4;
+    border-radius: 5%;
+}
+
+.fifth-window:hover {
+    transform: translateX(20px);
+}
+.banniere-last {
+    position : absolute;
+    width: 218vh;
+    height: 20vh;
+    top: 3100px;
+    left: 0%;
+    z-index: 10;
+}
+
+.lastbanniere {
+    position: absolute;
+    width: 100%;
+    top: 0vh;
+    left: 0%;
+    z-index: 10;
+}
+.github-icon {
+    position: absolute;
+    top: 12vh;
+    left : 40%;
+    width: 5%;
+    z-index: 12;
+    transition: 0.4s ease;
+}
+
+.github-icon:hover {
+    transform: translateY(-30px);
+}
+
+.ln-icon {
+    position: absolute;
+    top: 12vh;
+    left : 46.6%;
+    width: 4.9%;
+    height: 54%;;
+    z-index: 13;
+    transition: 0.4s ease;
+}
+
+.insta-icon {
+    position: absolute;
+    top: 12vh;
+    left : 53%;
+    width: 4.9%;
+    height: 54%;;
+    z-index: 13;
+    transition: 0.5s ease;
+}
+.insta-icon:hover {
+    transform: translateY(-30px);
+}
+
+.ln-icon:hover {
+    transform: translateY(-30px);
+}
+
+.footer-p {
+    position: absolute;
+    text-align: center;
+    top : 3350px;
+    right : 7%;
+    z-index: 19;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #3f2a02;
+    font-weight: 400;
+    font-variation-settings: "wght" 400;
+}
