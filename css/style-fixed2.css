@@ -1,0 +1,630 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary-color: #3f2a02;
+    --secondary-color: #2b1e03;
+    --bg-color: #efdbbe;
+    --accent-color: #c59f7e6b;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../PORTFO_FOND_3.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.en-tete {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 50;
+}
+
+.profil-boutton {
+    position: fixed;
+    top: 1%;
+    left: 2%;
+    z-index: 19;
+    width: clamp(60px, 10vw, 120px);
+    height: auto;
+    aspect-ratio: 1;
+    margin: 0;
+    padding: 0;
+    transition: transform 1s ease;
+}
+
+.profil-boutton:hover {
+    transform: scale(1.1);
+}
+
+.barre-gauche-p {
+    position: fixed;
+    top: 4vh;
+    left: clamp(80px, 12%, 180px);
+    z-index: 19;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: clamp(12px, 1.2vw, 18px);
+}
+
+.burger {
+    position: fixed;
+    top: 38px;
+    right: 5%;
+    width: 40px;
+    height: 57px;
+    cursor: pointer;
+    z-index: 60;
+}
+
+.burger span {
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 20%;
+    background: #4f2c03;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: clamp(250px, 30%, 400px);
+    border-radius: 10%;
+    height: 50vh;
+    background: var(--bg-color);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    transition: right 0.6s ease;
+    z-index: 40;
+    padding: 0;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-family: "ohno-softie-variable", sans-serif;
+    color: var(--primary-color);
+}
+
+.menu.active {
+    right: 2%;
+}
+
+.portfolio-text {
+    position: absolute;
+    width: clamp(300px, 80%, 1200px);
+    height: auto;
+    top: 5vh;
+    right: 5%;
+    z-index: 18;
+}
+
+.bandetournante {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 12;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.bandetournante::-webkit-scrollbar {
+    display: none;
+}
+
+.all-groupstext {
+    display: flex;
+    width: max-content;
+    animation: spintext 29s linear infinite;
+    gap: 4em;
+}
+
+.grouptext {
+    display: flex;
+    gap: 4em;
+}
+
+.word {
+    flex: 0 0 auto;
+    padding: 0.6em 1.2em;
+    border: 1.5px solid #483204;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "ohno-softie-variable", sans-serif;
+    font-weight: 400;
+    color: var(--secondary-color);
+    white-space: nowrap;
+    font-size: clamp(12px, 1vw, 16px);
+}
+
+@keyframes spintext {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.carrouseltournant {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin: 100px auto;
+    overflow-x: hidden;
+}
+
+.carrouseltournant::-webkit-scrollbar {
+    display: none;
+}
+
+.all-groups {
+    display: flex;
+    gap: 2em;
+    animation: spin 25s linear infinite;
+}
+
+.group {
+    display: flex;
+    gap: 2em;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: clamp(250px, 25vw, 350px);
+    height: clamp(150px, 15vw, 200px);
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    display: block;
+}
+
+@keyframes spin {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.first-window {
+    position: relative;
+    width: clamp(300px, 80%, 900px);
+    height: auto;
+    margin: 100px auto;
+    z-index: 15;
+    transition: transform 0.5s ease;
+}
+
+.first-window:hover {
+    transform: scale(1.009);
+}
+
+.first-window img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.first-window-entete {
+    position: absolute;
+    text-align: center;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: var(--secondary-color);
+    font-weight: 400;
+    z-index: 19;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+.text-first-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: var(--secondary-color);
+    font-weight: 400;
+    z-index: 16;
+    padding: 0 5%;
+    font-size: clamp(10px, 1.2vw, 16px);
+    line-height: 1.6;
+}
+
+.firstpopup, .secondpopup, .thirdpopup {
+    position: absolute;
+    width: clamp(150px, 20vw, 300px);
+    height: auto;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+
+.firstpopup {
+    top: 180vh;
+    left: 5%;
+}
+
+.secondpopup {
+    top: 210vh;
+    left: 35%;
+}
+
+.thirdpopup {
+    top: 190vh;
+    right: 5%;
+}
+
+.firstpopup:hover, .secondpopup:hover, .thirdpopup:hover {
+    transform: translateY(-10px);
+}
+
+.round-profile {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    border-radius: 50%;
+    z-index: 14;
+    top: 35vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(200px, 25vw, 400px);
+    height: clamp(200px, 25vw, 400px);
+}
+
+.round-mask {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 14;
+}
+
+.photo-profile {
+    position: absolute;
+    bottom: -75%;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: auto;
+    z-index: 15;
+}
+
+.Fil_de_l_educ {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.skillcontact {
+    position: relative;
+    width: clamp(300px, 60%, 700px);
+    height: auto;
+    margin: 100px auto;
+    z-index: 16;
+    transition: transform 0.5s ease;
+}
+
+.skillcontact:hover {
+    transform: scale(1.01);
+}
+
+.Skill-window {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.numero-telephone, .email1 {
+    position: absolute;
+    left: 15%;
+    z-index: 17;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #3c2902;
+    font-weight: 500;
+    font-size: clamp(12px, 1.5vw, 18px);
+}
+
+.numero-telephone {
+    top: 35%;
+}
+
+.email1 {
+    top: 47%;
+}
+
+.first-banniere {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    z-index: 10;
+}
+
+.firstbannieretext {
+    position: absolute;
+    width: clamp(200px, 30%, 500px);
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+}
+
+.img-banniere {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+.fond-motif {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.projet-branding, .projets-illustration, .projetA-digitalart, .projetB-coding {
+    position: relative;
+    width: clamp(200px, 40%, 500px);
+    height: auto;
+    margin: 20px;
+    z-index: 10;
+    transition: transform 0.5s ease;
+    display: inline-block;
+}
+
+.projet-branding:hover, .projets-illustration:hover, 
+.projetA-digitalart:hover, .projetB-coding:hover {
+    transform: translateY(-20px);
+}
+
+#travail-section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 5%;
+}
+
+.banniere-last {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    z-index: 10;
+}
+
+.lastbanniere {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.github-icon, .ln-icon, .insta-icon {
+    position: absolute;
+    width: clamp(40px, 5%, 80px);
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 12;
+    transition: transform 0.4s ease;
+}
+
+.github-icon {
+    left: 35%;
+}
+
+.ln-icon {
+    left: 45%;
+}
+
+.insta-icon {
+    left: 55%;
+}
+
+.github-icon:hover, .ln-icon:hover, .insta-icon:hover {
+    transform: translateY(-30px);
+}
+
+.little-rounded-rect {
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+    width: clamp(150px, 20vw, 250px);
+    height: clamp(30px, 4vh, 50px);
+    background: var(--accent-color);
+    border-radius: 9999px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projets-en-cours {
+    font-family: "ohno-softie-variable", sans-serif;
+    color: var(--secondary-color);
+    font-weight: 400;
+    margin: 0;
+    font-size: clamp(10px, 1vw, 14px);
+}
+
+.online-round {
+    position: fixed;
+    bottom: 5%;
+    left: calc(5% + clamp(130px, 18vw, 230px));
+    width: clamp(8px, 1vh, 15px);
+    height: clamp(8px, 1vh, 15px);
+    background: #218931;
+    border-radius: 50%;
+    z-index: 11;
+}
+
+.footer-p {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    z-index: 19;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: clamp(12px, 1.2vw, 16px);
+}
+
+.numero, .email {
+    position: relative;
+    padding: 10px 30px;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #382402;
+    font-weight: 400;
+    z-index: 10;
+    font-size: clamp(12px, 1.2vw, 16px);
+}
+
+@media screen and (max-width: 1024px) {
+    .portfolio-text {
+        width: 90%;
+        right: 5%;
+    }
+    
+    .round-profile {
+        width: clamp(150px, 30vw, 300px);
+        height: clamp(150px, 30vw, 300px);
+    }
+    
+    .menu {
+        width: 40%;
+    }
+}
+
+/* Media Queries pour mobiles */
+@media screen and (max-width: 768px) {
+    .portfolio-text {
+        width: 95%;
+        top: 10vh;
+    }
+    
+    .round-profile {
+        top: 9vh;
+        width: clamp(120px, 40vw, 250px);
+        height: clamp(120px, 40vw, 250px);
+    }
+    
+    .first-window {
+        width: 95%;
+        margin: 50px auto;
+    }
+    
+    .text-first-window {
+        font-size: clamp(8px, 2.5vw, 14px);
+        padding: 0 8%;
+    }
+    
+    .firstpopup, .secondpopup, .thirdpopup {
+        width: clamp(100px, 25vw, 200px);
+    }
+    
+    .projet-branding, .projets-illustration, 
+    .projetA-digitalart, .projetB-coding {
+        width: 80%;
+        margin: 15px auto;
+        display: block;
+    }
+    
+    .menu {
+        width: 60%;
+        height: 60vh;
+    }
+    
+    .github-icon, .ln-icon, .insta-icon {
+        width: clamp(35px, 8%, 60px);
+    }
+    
+    .github-icon {
+        left: 25%;
+    }
+    
+    .ln-icon {
+        left: 42%;
+    }
+    
+    .insta-icon {
+        left: 60%;
+    }
+    
+    .little-rounded-rect {
+        width: clamp(120px, 30vw, 200px);
+        left: 3%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profil-boutton {
+        width: clamp(50px, 15vw, 80px);
+    }
+    
+    .barre-gauche-p {
+        left: clamp(60px, 15%, 100px);
+        font-size: clamp(10px, 2vw, 14px);
+    }
+    
+    .word {
+        padding: 0.4em 0.8em;
+        font-size: clamp(10px, 2vw, 14px);
+    }
+    
+    .card {
+        width: clamp(200px, 40vw, 280px);
+        height: clamp(120px, 25vw, 170px);
+    }
+}
