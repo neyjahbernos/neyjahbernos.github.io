@@ -1,7 +1,7 @@
 function scrollToContact(sectionId) {
     const targetElement = document.getElementById(sectionId);
     const navBar = document.getElementById('ma-barre-nav-fixe');
-    const headerHeight = -650;
+    const headerHeight = 50;
 
 if (targetElement) {
         const elementPosition = targetElement.getBoundingClientRect().top;     
@@ -15,7 +15,7 @@ if (targetElement) {
 function scrollToAboutMe(sectionId) {
    const targetElement = document.getElementById(sectionId);
     const navBar = document.getElementById('ma-barre-nav-fixe');
-    const headerHeight = -260;
+    const headerHeight = 100;
 
 if (targetElement) {
         const elementPosition = targetElement.getBoundingClientRect().top;     

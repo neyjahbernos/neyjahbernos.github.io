@@ -227,9 +227,9 @@ body {
 
 .first-window {
     position: relative;
-    width: clamp(300px, 80%, 900px);
+    width: clamp(400px, 100%, 900px);
     height: auto;
-    margin: 100px auto;
+    margin: 0px auto;
     z-index: 15;
     transition: transform 0.5s ease;
 }
@@ -267,7 +267,7 @@ body {
     color: var(--secondary-color);
     font-weight: 400;
     z-index: 16;
-    padding: 0 5%;
+    padding: 0%;
     font-size: clamp(10px, 1.2vw, 16px);
     line-height: 1.6;
 }
@@ -286,12 +286,13 @@ body {
 }
 
 .secondpopup {
-    top: 210vh;
+    top: 335vh;
     left: 35%;
 }
 
 .thirdpopup {
-    top: 190vh;
+    left: 140vh;
+    top: 298vh;
     right: 5%;
 }
 
@@ -369,11 +370,11 @@ body {
     font-family: "ohno-softie-variable", sans-serif;
     color: #3c2902;
     font-weight: 500;
-    font-size: clamp(12px, 1.5vw, 18px);
+    font-size: clamp(15px, 1.5vw, 15px);
 }
 
 .numero-telephone {
-    top: 35%;
+    top: 40%;
 }
 
 .email1 {
@@ -382,7 +383,7 @@ body {
 
 .first-banniere {
     position: relative;
-    width: 100%;
+    width: 110%;
     margin-top: 100px;
     z-index: 10;
 }
@@ -390,14 +391,15 @@ body {
 .firstbannieretext {
     position: absolute;
     width: clamp(200px, 30%, 500px);
-    top: -50px;
-    left: 50%;
+    top: 60vh;
+     left: 40%;
     transform: translateX(-50%);
     z-index: 11;
 }
 
 .img-banniere {
     position: relative;
+    top : 40vh;
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -410,17 +412,49 @@ body {
     width: 100%;
     max-width: 100%;
     height: auto;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
-.projet-branding, .projets-illustration, .projetA-digitalart, .projetB-coding {
+.projet-branding {
     position: relative;
-    width: clamp(200px, 40%, 500px);
+    width: clamp(20px, 30%, 325px);
     height: auto;
+    top : -30vh;
+    margin: 0px;
+    z-index: 10;
+    right: 5vh;
+    transition: transform 0.5s ease;
+}
+
+.projetB-coding {
+    position: relative;
+    width: clamp(20px, 30%, 325px);
+    height: auto;
+    left : 43vh;
     margin: 20px;
     z-index: 10;
     transition: transform 0.5s ease;
-    display: inline-block;
+}
+
+.projets-illustration {
+    position: relative;
+    width: clamp(20px, 30%, 350px);
+    height: auto;
+    top : 42vh;
+    left : 103vh;
+    margin: 0px;
+    z-index: 10;
+    transition: transform 0.5s ease;
+}
+
+.projetA-digitalart {
+    position: relative;
+    width: clamp(20px, 30%, 323px);
+    height: auto;
+    left : 5vh;
+    margin: 0px;
+    z-index: 10;
+    transition: transform 0.5s ease;
 }
 
 .projet-branding:hover, .projets-illustration:hover, 
@@ -430,17 +464,15 @@ body {
 
 #travail-section {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 50px 5%;
+    gap: 0px;
+    padding: 0px 0%;
 }
 
 .banniere-last {
     position: relative;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 400px;
     z-index: 10;
 }
 
@@ -597,6 +629,7 @@ body {
     .ln-icon {
         left: 42%;
     }
+
     
     .insta-icon {
         left: 60%;
@@ -622,7 +655,11 @@ body {
         padding: 0.4em 0.8em;
         font-size: clamp(10px, 2vw, 14px);
     }
-    
+
+    .text-first-window {
+        font-size: clamp(5px, 2vw, 9px);
+        padding: 0;
+    }
     .card {
         width: clamp(200px, 40vw, 280px);
         height: clamp(120px, 25vw, 170px);
