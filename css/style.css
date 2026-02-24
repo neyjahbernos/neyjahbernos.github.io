@@ -423,7 +423,6 @@ body {
     top : -30vh;
     margin: 0px;
     z-index: 10;
-    right: 5vh;
     transition: transform 0.5s ease;
 }
 
@@ -431,7 +430,6 @@ body {
     position: relative;
     width: clamp(20px, 30%, 325px);
     height: auto;
-    left : 43vh;
     margin: 20px;
     z-index: 10;
     transition: transform 0.5s ease;
@@ -442,7 +440,6 @@ body {
     width: clamp(20px, 30%, 350px);
     height: auto;
     top : 42vh;
-    left : 103vh;
     margin: 0px;
     z-index: 10;
     transition: transform 0.5s ease;
@@ -452,7 +449,6 @@ body {
     position: relative;
     width: clamp(20px, 30%, 323px);
     height: auto;
-    left : 5vh;
     margin: 0px;
     z-index: 10;
     transition: transform 0.5s ease;
@@ -582,6 +578,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+    .body {
+        margin: 0;
+    }
+
+   
     .portfolio-text {
         width: 0%;
         z-index: 10;
@@ -637,24 +639,36 @@ body {
     
     .projet-branding {
         width: 50%;
-        top : 2vh;
-        margin: 15px auto;
+        top : 0vh;
+        z-index: 15;
+        display: block;
+        margin: 0 auto;
+        padding : 2vh;
     }
 
     .projets-illustration {
-        width: 10%;
+        width: 52%;
+        display: block;
+        margin: 0 auto;
         top : 0vh;
         z-index: 15;
+        padding : 2vh;
     }
 
     .projetA-digitalart {
         width: 50%;
         margin: 15px auto;
+        display: block;
+        margin: 0 auto;
+        padding : 2vh;
     }
 
     .projetB-coding {
         width: 50%;
         margin: 15px auto;
+        display: block;
+        margin: 0 auto;
+        padding : 2vh;
     }
     
     .menu {
