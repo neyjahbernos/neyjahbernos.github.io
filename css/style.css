@@ -266,9 +266,10 @@ body {
     font-family: "ohno-softie-variable", sans-serif;
     color: var(--secondary-color);
     font-weight: 400;
+    width: 70%;
     z-index: 16;
     padding: 0%;
-    font-size: clamp(10px, 1.2vw, 16px);
+    font-size: clamp(15px, 1vw, 16px);
     line-height: 1.6;
 }
 
@@ -582,35 +583,78 @@ body {
 
 @media screen and (max-width: 768px) {
     .portfolio-text {
-        width: 95%;
-        top: 10vh;
+        width: 0%;
+        z-index: 10;
+        top: 1vh;
+    }
+
+    .barre-gauche-p {
+        top : 3vh;
+        left : 5%;
     }
     
     .round-profile {
-        top: 9vh;
+        top: 3vh;
         width: clamp(120px, 40vw, 250px);
         height: clamp(120px, 40vw, 250px);
     }
     
     .first-window {
-        width: 95%;
+        width: 85%;
         margin: 50px auto;
     }
+    .en-tete {
+        opacity: 0%;
+    }
+    .fond-motif {
+        width: 0%;
+    }
     
-    .text-first-window {
-        font-size: clamp(8px, 2.5vw, 14px);
+    .first-window-entete {
+        font-size: clamp(8px, 5vw, 12px);
+        width: 70%;
         padding: 0 8%;
+    }
+
+    .text-first-window {
+        font-size: clamp(4px, 0.5vw, 5px);
+        width: 70%;
+        padding: 0 0%;
     }
     
     .firstpopup, .secondpopup, .thirdpopup {
         width: clamp(100px, 25vw, 200px);
     }
+
+    .img-banniere {
+        top : 0vh;
+    }
+
+    .firstbannieretext {
+        top : 3vh;
+        width: 40%;
+    }
     
-    .projet-branding, .projets-illustration, 
-    .projetA-digitalart, .projetB-coding {
-        width: 80%;
+    .projet-branding {
+        width: 50%;
+        top : 2vh;
         margin: 15px auto;
-        display: block;
+    }
+
+    .projets-illustration {
+        width: 10%;
+        top : 0vh;
+        z-index: 15;
+    }
+
+    .projetA-digitalart {
+        width: 50%;
+        margin: 15px auto;
+    }
+
+    .projetB-coding {
+        width: 50%;
+        margin: 15px auto;
     }
     
     .menu {
@@ -638,6 +682,23 @@ body {
     .little-rounded-rect {
         width: clamp(200px, 30vw, 200px);
         left: 3%;
+    }
+
+    .bandetournante {
+        margin: 1%;
+        padding: 1%;
+    }
+
+    .menu {
+        height: 30%;
+    }
+    .menu.active {
+        height: 30%;
+    }
+
+    .carrouseltournant {
+        margin: 0%;
+        padding : 10%;
     }
 }
 
