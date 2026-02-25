@@ -14,7 +14,6 @@ html, body {
 body {
     position: relative;
     width: 100%;
-    min-height: 100vh;
     background-image: url("../PORTFO_FOND_3.png");
     background-position: center;
     background-size: cover;
@@ -282,18 +281,18 @@ body {
 }
 
 .firstpopup {
-    top: 282vh;
+    top: 268vh;
     left: 11%;
 }
 
 .secondpopup {
-    top: 335vh;
+    top: 320vh;
     left: 35%;
 }
 
 .thirdpopup {
     left: 140vh;
-    top: 298vh;
+    top: 282vh;
     right: 5%;
 }
 
@@ -408,7 +407,7 @@ body {
 }
 
 .fond-motif {
-    position: relative;
+    position: absolute;
     z-index: 2;
     width: 100%;
     max-width: 100%;
@@ -418,19 +417,35 @@ body {
 
 .projet-branding {
     position: relative;
-    width: clamp(20px, 30%, 325px);
+    width: 55%;
     height: auto;
-    top : -30vh;
     margin: 0px;
     z-index: 10;
     transition: transform 0.5s ease;
+}
+
+.projetA-digitalart {
+    position: relative;
+    width: 55%;
+    height: auto;
+    margin: 0px;
+    z-index: 10;
+    transition: transform 0.5s ease;
+}
+
+.ligne1, .ligne2 {
+    display: flex;            
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;             
+    width: 100%;       
 }
 
 .projetB-coding {
     position: relative;
     width: clamp(20px, 30%, 325px);
     height: auto;
-    margin: 20px;
+    margin: 0px;
     z-index: 10;
     transition: transform 0.5s ease;
 }
@@ -439,20 +454,11 @@ body {
     position: relative;
     width: clamp(20px, 30%, 350px);
     height: auto;
-    top : 42vh;
     margin: 0px;
     z-index: 10;
     transition: transform 0.5s ease;
 }
 
-.projetA-digitalart {
-    position: relative;
-    width: clamp(20px, 30%, 323px);
-    height: auto;
-    margin: 0px;
-    z-index: 10;
-    transition: transform 0.5s ease;
-}
 
 .projet-branding:hover, .projets-illustration:hover, 
 .projetA-digitalart:hover, .projetB-coding:hover {
@@ -461,7 +467,6 @@ body {
 
 #travail-section {
     position: relative;
-    justify-content: center;
     gap: 0px;
     padding: 0px 0%;
 }
@@ -469,37 +474,36 @@ body {
 .banniere-last {
     position: relative;
     width: 100%;
-    margin-top: 400px;
+    margin-top: 0px;
     z-index: 10;
 }
 
 .lastbanniere {
-    position: relative;
+    position: absolute;
     width: 100%;
+    top : 720vh;
     max-width: 100%;
     height: auto;
+    display : block;
+    z-index: 15;
 }
 
 .github-icon, .ln-icon, .insta-icon {
     position: absolute;
-    width: clamp(40px, 5%, 80px);
-    height: auto;
-    top: 50%;
+    width: 5%;
+    top : 120vh;
     transform: translateY(-50%);
-    z-index: 12;
+    z-index: 17;
     transition: transform 0.4s ease;
 }
 
 .github-icon {
-    left: 35%;
 }
 
 .ln-icon {
-    left: 45%;
 }
 
 .insta-icon {
-    left: 55%;
 }
 
 .github-icon:hover, .ln-icon:hover, .insta-icon:hover {
@@ -536,29 +540,17 @@ body {
     height: clamp(5px, 0.9vh, 15px);
     background: #218931;
     border-radius: 50%;
-    z-index: 11;
+    z-index: 18;
 }
 
+
+
 .footer-p {
-    position: relative;
-    text-align: center;
-    margin-top: 100px;
-    padding: 20px;
-    z-index: 19;
-    font-family: "ohno-softie-variable", sans-serif;
-    color: var(--primary-color);
-    font-weight: 400;
-    font-size: clamp(12px, 1.2vw, 16px);
+    display: none;
 }
 
 .numero, .email {
-    position: relative;
-    padding: 10px 30px;
-    font-family: "ohno-softie-variable", sans-serif;
-    color: #382402;
-    font-weight: 400;
-    z-index: 10;
-    font-size: clamp(12px, 1.2vw, 16px);
+   display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -581,15 +573,17 @@ body {
 
     .body {
         margin: 0;
+        height: 200vh;
     }
 
-   
     .portfolio-text {
-        width: 0%;
-        z-index: 10;
-        top: 1vh;
+        display: none ;
     }
 
+    .numero, .email, .footer-p {
+        display: none;
+
+    }
     .barre-gauche-p {
         top : 3vh;
         left : 5%;
@@ -603,6 +597,7 @@ body {
     
     .first-window {
         width: 85%;
+        top : 20 vh;
         margin: 50px auto;
     }
     .en-tete {
@@ -625,7 +620,11 @@ body {
     }
     
     .firstpopup, .secondpopup, .thirdpopup {
-        width: clamp(100px, 25vw, 200px);
+        display: none;
+    }
+
+    .Fil_de_l_educ {
+        display: none ;
     }
 
     .img-banniere {
@@ -677,20 +676,32 @@ body {
     }
     
     .github-icon, .ln-icon, .insta-icon {
-        width: clamp(35px, 8%, 60px);
+        width: clamp(35px, 8%, 0px);
     }
     
     .github-icon {
-        left: 25%;
+        top : -30vh;
+        left : 65%;
+        display: block;
+        margin : 0 auto;
+        width: 20%;
     }
     
     .ln-icon {
-        left: 42%;
+        top : -30vh;
+        display: block;
+        left : 15%;
+        margin : 0 auto;
+        width: 20%;
     }
 
-    
     .insta-icon {
-        left: 60%;
+
+        width: 20%;
+        left : 40%;
+        display: block;
+        margin : 0 auto;
+        top : -30vh;
     }
     
     .little-rounded-rect {
@@ -713,6 +724,9 @@ body {
     .carrouseltournant {
         margin: 0%;
         padding : 10%;
+    }
+    .lastbanniere {
+        width: 0%;
     }
 }
 

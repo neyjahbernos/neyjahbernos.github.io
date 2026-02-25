@@ -104,7 +104,6 @@ body {
 .second-draw {
     position: absolute;
     top : 2.5vh;
-    left: 63px;
     width: 75%;
     z-index : 4;
     border-radius: 5%;
@@ -232,9 +231,6 @@ body {
 .ln-icon {
     position: absolute;
     top: 12vh;
-    left : 46.6%;
-    width: 4.9%;
-    height: 54%;;
     z-index: 13;
     transition: 0.4s ease;
 }
@@ -243,8 +239,6 @@ body {
     position: absolute;
     top: 12vh;
     left : 53%;
-    width: 4.9%;
-    height: 54%;;
     z-index: 13;
     transition: 0.5s ease;
 }
@@ -266,4 +260,266 @@ body {
     color: #3f2a02;
     font-weight: 400;
     font-variation-settings: "wght" 400;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .body {
+        margin: 0;
+        height: 200vh;
+    }
+    
+    .menu {
+        width: 60%;
+        height: 60vh;
+    }
+    
+    .github-icon, .ln-icon, .insta-icon {
+        width: clamp(35px, 8%, 0px);
+    }
+    
+    .github-icon {
+        top : -30vh;
+        left : 65%;
+        display: block;
+        margin : 0 auto;
+        width: 20%;
+    }
+    
+    .ln-icon {
+        top : -30vh;
+        display: block;
+        left : 15%;
+        margin : 0 auto;
+        width: 20%;
+    }
+
+    .insta-icon {
+
+        width: 20%;
+        left : 40%;
+        display: block;
+        margin : 0 auto;
+        top : -30vh;
+    }
+
+    .lastbanniere {
+        width: 0%;
+    }
+
+    html, body {
+    margin: 0;
+    padding: 0;
+    }
+
+    .profil-boutton {
+        position: fixed;
+        margin-top: 1%;
+        left: 4%;
+        z-index: 18;
+        width: 15vh;
+        margin: 0;
+        padding: 0;
+        transition: 1s ease;
+    }
+
+    .profil-boutton:hover {
+        transform: scale(1.1);
+    }
+
+    body {
+        position: relative;
+        width: 100%;
+        height: 320vh;
+        background-image: url("../PORTFO_FOND_3.png");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .banniere {
+        position: absolute;
+        width: 100%;
+        top : 0vh;
+        z-index: 2;
+    }
+
+    .banniere-p {
+        position: absolute;
+        text-align: center;
+        z-index: 3;
+        top : 15vh;
+        font-family: "ohno-softie-variable", sans-serif;
+        color: #2b1e03;
+        font-weight: 400;
+    }
+
+    .banniere-img {
+       position: absolute;
+        width: 100%;
+        top : 0vh;
+        z-index: 3;
+    }
+
+    .first-window {
+        position: absolute;
+        top : 300px;
+        width: 80%;
+    }
+
+    .bloc {
+       display: none;
+    }
+
+    .first-draw {
+        position: absolute;
+        z-index : 4;
+        border-radius: 5%;
+    }
+
+
+    .second-window {
+        position: absolute;
+        top : 1150px;
+        width: 80%;
+        height: 70vh;
+    }
+
+    .bloc2 {
+        display: none;
+    }
+
+    .second-draw {
+        position: absolute;
+        z-index : 4;
+        border-radius: 5%;
+    }
+
+    .third-window {
+        position: absolute;
+        top : 1600px;
+        width: 80%;
+        height: 70vh;
+    }
+
+    .bloc3 {
+       display : none;
+    }
+
+    .third-draw {
+        position: absolute;
+        z-index : 4;
+        border-radius: 5%;
+    }
+
+
+    .fourth-window {
+        position: absolute;
+        top : 2050px;
+        width: 90%;
+        height: 70vh;
+        transition: 2s ease;
+    }
+
+    .bloc4 {
+        display : none;
+    }
+
+    .first-animation {
+        position: absolute;
+        top : 0vh;
+        width: 75%;
+        z-index : 4;
+        border-radius: 5%;
+    }
+
+    .fifth-window {
+        position: absolute;
+        width: 80%;
+        transition: 2s ease;
+    }
+
+    .bloc5 {
+        display : none ;
+    }
+
+    .second-animation {
+        position: absolute;
+        z-index : 4;
+        border-radius: 5%;
+    }
+
+    .banniere-last {
+        position : absolute;
+        width: 100%;
+        height: 20vh;
+        z-index: 10;
+    }
+
+    .lastbanniere {
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+    }
+    .github-icon {
+        position: absolute;
+        top: 12vh;
+        left : 40%;
+        width: 5%;
+        z-index: 12;
+        transition: 0.4s ease;
+    }
+
+    .github-icon:hover {
+        transform: translateY(-30px);
+    }
+
+    .ln-icon {
+        position: absolute;
+        top: 12vh;
+        z-index: 13;
+        transition: 0.4s ease;
+    }
+
+    .insta-icon {
+        position: absolute;
+        top: 12vh;
+        left : 53%;
+        z-index: 13;
+        transition: 0.5s ease;
+    }
+    .insta-icon:hover {
+        transform: translateY(-30px);
+    }
+
+    .ln-icon:hover {
+        transform: translateY(-30px);
+    }
+
+    .footer-p {
+        position: absolute;
+        text-align: center;
+        top : 3350px;
+        right : 7%;
+        z-index: 19;
+        font-family: "ohno-softie-variable", sans-serif;
+        color: #3f2a02;
+        font-weight: 400;
+        font-variation-settings: "wght" 400;
+    }
+
+    }
+
+@media screen and (max-width: 480px) {
+    .profil-boutton {
+        width: clamp(50px, 15vw, 80px);
+    }
+    
 }
