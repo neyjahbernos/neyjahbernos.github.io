@@ -419,6 +419,8 @@ body {
     position: relative;
     width:clamp(20px, 30%, 325px);
     height: auto;
+     padding: 0;
+    margin: 0;
     margin: 0px;
     z-index: 10;
     transition: transform 0.5s ease;
@@ -429,15 +431,29 @@ body {
     width:clamp(20px, 30%, 325px);
     align-self: center;
     height: auto;
+     padding: 0;
+    margin: 0;
     margin: 0px;
     z-index: 10;
     transition: transform 0.5s ease;
+}
+
+.ligne1 a, .ligne2 a {
+     display: inline-flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    font-size: 0;
 }
 
 .folderbox {
     display: flex;
     flex-direction: column;
     align-items: center;
+     padding: 0;
+    margin: 0;
     width: 100%;
     gap: 20px;
 }
@@ -445,10 +461,15 @@ body {
 .ligne1, .ligne2 {
     display: flex;
     justify-content: center;
-    align-content: center;
     align-items: center;
-    align-self: center;
+     padding: 0;
+    margin: 0;
     gap: 20px;
+    width: fit-content;
+}
+
+.ligne1 a, .ligne2 a {
+    flex: 0 0 auto; 
     width: fit-content;
 }
 
@@ -458,6 +479,8 @@ body {
     position: relative;
     width:clamp(20px, 30%, 325px);
     height: auto;
+     padding: 0;
+    margin: 0;
     margin: 0px;
     z-index: 10;
     transition: transform 0.5s ease;
@@ -467,6 +490,8 @@ body {
     position: relative;
     width: clamp(20px, 30%, 350px);
     height: auto;
+     padding: 0;
+    margin: 0;
     margin: 0px;
     z-index: 10;
     transition: transform 0.5s ease;
@@ -481,7 +506,7 @@ body {
 #travail-section {
     position: relative;
     gap: 0px;
-    padding: 0px 0%;
+    padding: 0;
 }
 
 .banniere-last {
@@ -510,14 +535,6 @@ body {
     transition: transform 0.4s ease;
 }
 
-.github-icon {
-}
-
-.ln-icon {
-}
-
-.insta-icon {
-}
 
 .github-icon:hover, .ln-icon:hover, .insta-icon:hover {
     transform: translateY(-30px);
@@ -654,33 +671,29 @@ body {
         top : 0vh;
         z-index: 15;
         display: block;
-        margin: 0 auto;
-        padding : 2vh;
+       margin:  auto;
     }
 
     .projets-illustration {
         width: 52%;
         display: block;
-        margin: 0 auto;
         top : 0vh;
         z-index: 15;
-        padding : 2vh;
+        margin: auto;
     }
 
     .projetA-digitalart {
         width: 50%;
         margin: 15px auto;
         display: block;
-        margin: 0 auto;
-        padding : 2vh;
+       margin: auto;
     }
 
     .projetB-coding {
         width: 50%;
         margin: 15px auto;
         display: block;
-        margin: 0 auto;
-        padding : 2vh;
+       margin: auto;
     }
     
     .menu {
