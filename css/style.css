@@ -427,18 +427,32 @@ body {
 .projetA-digitalart {
     position: relative;
     width:clamp(20px, 30%, 325px);
+    align-self: center;
     height: auto;
     margin: 0px;
     z-index: 10;
     transition: transform 0.5s ease;
 }
 
-.ligne1 .ligne2 {
-    display: flex;            
+.folderbox {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
     gap: 20px;
-    width: 100%;       
 }
+
+.ligne1, .ligne2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 20px;
+    width: fit-content;
+}
+
+
 
 .projetB-coding {
     position: relative;
