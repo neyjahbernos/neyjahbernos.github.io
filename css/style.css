@@ -205,7 +205,7 @@ body {
     width: clamp(250px, 25vw, 350px);
     height: clamp(150px, 15vw, 200px);
     background: var(--bg-color);
-    display: flex;
+    display: flex;  
     align-items: center;
     justify-content: center;
     border-radius: 5%;
@@ -417,7 +417,7 @@ body {
 
 .projet-branding {
     position: relative;
-    width: 55%;
+    width:clamp(20px, 30%, 325px);
     height: auto;
     margin: 0px;
     z-index: 10;
@@ -426,24 +426,23 @@ body {
 
 .projetA-digitalart {
     position: relative;
-    width: 55%;
+    width:clamp(20px, 30%, 325px);
     height: auto;
     margin: 0px;
     z-index: 10;
     transition: transform 0.5s ease;
 }
 
-.ligne1, .ligne2 {
+.ligne1 .ligne2 {
     display: flex;            
-    justify-content: center; 
     align-items: center;
-    gap: 20px;             
+    gap: 20px;
     width: 100%;       
 }
 
 .projetB-coding {
     position: relative;
-    width: clamp(20px, 30%, 325px);
+    width:clamp(20px, 30%, 325px);
     height: auto;
     margin: 0px;
     z-index: 10;
