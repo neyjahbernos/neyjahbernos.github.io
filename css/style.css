@@ -416,7 +416,6 @@ body {
 }
 
 .projet-branding {
-    position: relative;
     width:clamp(20px, 30%, 325px);
     height: auto;
      padding: 0;
@@ -427,7 +426,6 @@ body {
 }
 
 .projetA-digitalart {
-    position: relative;
     width:clamp(20px, 30%, 325px);
     align-self: center;
     height: auto;
@@ -439,44 +437,36 @@ body {
 }
 
 .ligne1 a, .ligne2 a {
-     display: inline-flex;
-    width: fit-content;
-    height: fit-content;
+   display: contents;
     padding: 0;
     margin: 0;
-    line-height: 0;
-    font-size: 0;
 }
 
 .folderbox {
     display: flex;
     flex-direction: column;
     align-items: center;
-     padding: 0;
-    margin: 0;
-    width: 100%;
+    padding: 0;
+    margin-top: 50vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: fit-content;
     gap: 20px;
 }
 
 .ligne1, .ligne2 {
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
-     padding: 0;
+    padding: 0;
     margin: 0;
     gap: 20px;
-    width: fit-content;
-}
-
-.ligne1 a, .ligne2 a {
-    flex: 0 0 auto; 
     width: fit-content;
 }
 
 
 
 .projetB-coding {
-    position: relative;
     width:clamp(20px, 30%, 325px);
     height: auto;
      padding: 0;
@@ -487,7 +477,6 @@ body {
 }
 
 .projets-illustration {
-    position: relative;
     width: clamp(20px, 30%, 350px);
     height: auto;
      padding: 0;
