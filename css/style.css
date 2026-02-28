@@ -501,24 +501,32 @@ body {
 .banniere-last {
     position: relative;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 100px;
     z-index: 10;
 }
 
 .lastbanniere {
     position: absolute;
     width: 100%;
-    top : 720vh;
+    top : 6vh;
     max-width: 100%;
     height: auto;
-    display : block;
     z-index: 15;
+}
+
+.icons {
+     display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    align-items: center;
+    gap: 200px;
+    width: 100%;
 }
 
 .github-icon, .ln-icon, .insta-icon {
     position: absolute;
+     margin-top: 30vh;
     width: 5%;
-    top : 120vh;
     transform: translateY(-50%);
     z-index: 17;
     transition: transform 0.4s ease;
@@ -561,8 +569,6 @@ body {
     border-radius: 50%;
     z-index: 18;
 }
-
-
 
 .footer-p {
     display: none;
@@ -689,35 +695,7 @@ body {
         width: 60%;
         height: 60vh;
     }
-    
-    .github-icon, .ln-icon, .insta-icon {
-        width: clamp(35px, 8%, 0px);
-    }
-    
-    .github-icon {
-        top : -30vh;
-        left : 65%;
-        display: block;
-        margin : 0 auto;
-        width: 20%;
-    }
-    
-    .ln-icon {
-        top : -30vh;
-        display: block;
-        left : 15%;
-        margin : 0 auto;
-        width: 20%;
-    }
 
-    .insta-icon {
-
-        width: 20%;
-        left : 40%;
-        display: block;
-        margin : 0 auto;
-        top : -30vh;
-    }
     
     .little-rounded-rect {
         width: clamp(200px, 30vw, 200px);
