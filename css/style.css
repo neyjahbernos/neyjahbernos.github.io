@@ -652,6 +652,22 @@ body {
         display: none ;
     }
 
+    .icons {
+    gap: 40px;
+    margin-top: 5vh;
+}
+
+.github-icon, .ln-icon, .insta-icon {
+    position: static;
+    width: clamp(40px, 10vw, 60px);
+    margin-top: 0;
+    transform: none;
+}
+
+.github-icon:hover, .ln-icon:hover, .insta-icon:hover {
+    transform: translateY(-10px);
+}
+    
     .img-banniere {
         top : 0vh;
     }
