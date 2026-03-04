@@ -547,6 +547,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 20;
 }
 
 .projets-en-cours {
@@ -555,6 +556,7 @@ body {
     font-weight: 400;
     margin: 0;
     font-size: clamp(10px, 1vw, 14px);
+    z-index: 20;
 }
 
 .online-round {
@@ -565,7 +567,7 @@ body {
     height: clamp(5px, 0.9vh, 15px);
     background: #218931;
     border-radius: 50%;
-    z-index: 18;
+    z-index: 20;
 }
 
 .footer-p {
