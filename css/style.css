@@ -713,9 +713,22 @@ body {
 
     
     .little-rounded-rect {
-        width: clamp(200px, 30vw, 200px);
-        left: 3%;
-    }
+    width: 150px;
+    padding: 0 15px;
+    left: 3%;
+    height: clamp(25px, 3vh, 40px);
+    z-index: 20;
+}
+
+.projets-en-cours {
+    font-size: clamp(9px, 3vw, 12px);
+    white-space: nowrap;
+}
+
+.online-round {
+    bottom: 6%;
+    left: calc(3% + clamp(140px, 20vw, 150px));
+}
 
     .bandetournante {
         margin: 1%;
@@ -741,13 +754,13 @@ body {
     left: 13%;
     }
     
-.numero-telephone {
-    top: 39%;
-}
+    .numero-telephone {
+        top: 39%;
+    }
 
-.email1 {
-    top: 45%;
-}
+    .email1 {
+        top: 45%;
+    }
 
 }
 
