@@ -181,7 +181,7 @@ body {
     position: relative;
     width: 100%;
     display: flex;
-    margin: 50px auto;
+    margin: 30px auto;
     overflow-x: hidden;
 }
 
@@ -191,13 +191,13 @@ body {
 
 .all-groups {
     display: flex;
-    gap: 1em;
+    gap: 0.1em;
     animation: spin 25s linear infinite;
 }
 
 .group {
     display: flex;
-    gap: 1em;
+    gap: 0.1em;
 }
 
 .card.no-bg {
@@ -215,14 +215,16 @@ body {
     border-radius: 5%;
 }
 
+.card img.angora {
+    width: 30%;
+    height: auto;
+}
+
 .regardscroi {
     width: 50% !important;
     height: auto !important;
 }
-.card img.primascherzo {
-    width: 120%;
-    height: auto;
-}
+
 
 .card img {
        width: auto;
