@@ -243,7 +243,8 @@ body {
     position: relative;
     width: clamp(400px, 100%, 900px);
     height: auto;
-    margin: 0px auto;
+    padding: 30px;
+    margin: 10px auto;
     z-index: 15;
     transition: transform 0.5s ease;
 }
@@ -267,7 +268,7 @@ body {
     z-index: 19;
     left: 50%;
     transform: translateX(-50%);
-    top: -10px;
+    top: 20px;
     font-size: clamp(16px, 2vw, 24px);
 }
 
@@ -287,29 +288,26 @@ body {
     line-height: 1.6;
 }
 
+.timeline-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.Fil_de_l_educ {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .firstpopup, .secondpopup, .thirdpopup {
-    position: absolute;
-    width: clamp(150px, 20vw, 300px);
-    height: auto;
-    z-index: 5;
-    transition: transform 0.5s ease;
+  position: absolute;
+  width: 22%;
+  transition: 0.5s;
 }
 
-.firstpopup {
-    top: 268vh;
-    left: 11%;
-}
-
-.secondpopup {
-    top: 320vh;
-    left: 35%;
-}
-
-.thirdpopup {
-    left: 140vh;
-    top: 282vh;
-    right: 5%;
-}
+.firstpopup  { left: 6%;  top: -6%;  }
+.secondpopup { left: 31%; top: 40%; }
+.thirdpopup  { left: 60%; top: 5%;  }
 
 .firstpopup:hover, .secondpopup:hover, .thirdpopup:hover {
     transform: translateY(-10px);
