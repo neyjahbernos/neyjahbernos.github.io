@@ -339,19 +339,8 @@ main {
 ══════════════════════════════════════ */
 @media (max-width: 700px) {
     .filters {
-        top: auto;
-        bottom: 1.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-        justify-content: center;
-        background: rgba(240, 230, 211, 0.85);
-        backdrop-filter: blur(6px);
-        padding: 0.5rem 1rem;
-        border-radius: 30px;
-        width: 90%;
+      position: fixed;
     }
-
-    .filter-btn { font-size: 0.65rem; padding: 0.3rem 0.7rem; }
 
     .banniere { padding: 14vh 5% 6vh; }
 
