@@ -14,6 +14,40 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+.filters {
+  position: fixed;
+  top: 4rem;
+  left: 10%;
+  z-index: 50;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  animation: fadeDown 0.7s 0.1s ease both;
+}
+
+.filter-btn {
+  background: none;
+  border: 1.5px solid rgb(64, 39, 11);
+  color: var(--text-muted);
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: rgb(61, 32, 6);
+  color: var(--card);
+  border-color: var(--text);
+}
+
+
 body {
   background-image: url("../PORTFO_FOND_3.png");
   background-position: center;
@@ -55,7 +89,7 @@ header {
 }
 
 .header-left h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "ohno-softie-variable", sans-serif;
   font-size: clamp(2rem, 5vw, 3.8rem);
   line-height: 1;
 }
@@ -63,18 +97,11 @@ header {
 .header-left h1 em { font-style: italic; color: var(--accent); }
 
 .header-left p {
-  margin-top: 0.4rem;
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+ display: none;
 }
 
 .header-right {
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.05rem;
-  color: var(--text-muted);
+  display: none;
 }
 
 .status-dot {
@@ -133,8 +160,8 @@ header {
 }
 
 .filter-btn {
-  background: rgba(240,230,211,0.5);
-  border: 1.5px solid rgba(122,92,58,0.28);
+  background: none;
+  border: 1.5px solid rgb(64, 39, 11);
   color: var(--text-muted);
   padding: 0.35rem 1rem;
   border-radius: 20px;
@@ -149,7 +176,7 @@ header {
 
 .filter-btn:hover,
 .filter-btn.active {
-  background: var(--text);
+  background: rgb(61, 32, 6);
   color: var(--card);
   border-color: var(--text);
 }
@@ -197,12 +224,11 @@ header {
 
 /* Left: colored image zone */
 .card-img {
-  width: 45%;
+  width: 100%;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0%;
   position: relative;
   overflow: hidden;
 }
@@ -215,14 +241,7 @@ header {
 
 /* Right: text zone */
 .card-info {
-  flex: 1;
-  background: var(--card);
-  padding: 4rem 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
-  position: relative;
+  display: none ;
 }
 
 .card-meta {

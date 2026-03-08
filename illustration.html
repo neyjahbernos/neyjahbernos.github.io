@@ -1,59 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\style5.css">
-    <link rel="stylesheet" href="https://use.typekit.net/bwf0pby.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — Titouan</title>
+  <link rel="stylesheet" href="css/style5.css">
+  <link rel="stylesheet" href="https://use.typekit.net/bwf0pby.css">
+  
+  
 </head>
 <body>
-     <nav class="barre-nav" id="ma-barre-nav-fixe">
-        <a href="index.html">
-            <img class="profil-boutton" src="img\profil_portfolio.png" alt="">
+
+  <header>
+    <div class="header-left">
+      <p>Portfolio — Chef de projet digital</p>
+    </div>
+    <div class="header-right">
+      <span class="status-dot"></span>2 en cours
+    </div>
+  </header>
+
+  <a href="index.html">
+     <img class="profil-boutton" src="img\profil_portfolio.png" alt="Logo profil">
+  </a>
+
+    <div class="online-round"></div>
+        <div class="little-rounded-rect">
+            <p class="projets-en-cours">2 projets en cours</p>
+            </div>
+    <div class="projects-list">
+        <a class="project-card" href="${p.link}">
+          <div class="card-inner">
+            <div class="card-img">
+              <span class="emoji"></span>
+            </div>
+            <div class="card-img">
+              <span class="emoji"></span>
+            </div>
+            <div class="card-info">
+              <div>
+                <div class="card-meta">
+                  <span class="card-year"></span>
+                  <span class="card-dot"></span>
+                  <span class="card-tag"></span>
+                </div>
+                <div class="card-title">${p.title}</div>
+                <div class="card-desc">${p.shortDesc}</div>
+              </div>
+              <div class="card-info-bottom">
+                <div class="card-skills">
+                  ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
+                </div>
+                <span class="card-status ${p.status}">${p.statusLabel}</span>
+              </div>
+              <span class="card-arrow">→</span>
+            </div>
+          </div>
         </a>
-    </nav>
-    <div class="banniere" >
-        <img class="banniere-img" src="img\banniere_bas.png" alt="">
-        <h2 class="banniere-p">Ces illustrations et animations sont conçues comme des supports de narration visuelle. <br>
-            Elles traduisent des concepts, des ambiances et des messages à travers le graphisme et le mouvement.<br>
-           Ces projets mettent en avant mes compétences en illustration digitale, composition visuelle,
-            gestion des couleurs et mise en mouvement,<br> ainsi que ma capacité à traduire une intention ou
-             une émotion à travers l’image.<br>
-        </h2> 
+
+        <a class="project-card" href="${p.link}">
+          <div class="card-inner">
+            <div class="card-img">
+              <span class="emoji"></span>
+            </div>
+            <div class="card-img">
+              <span class="emoji"></span>
+            </div>
+            <div class="card-info">
+              <div>
+                <div class="card-meta">
+                  <span class="card-year"></span>
+                  <span class="card-dot"></span>
+                  <span class="card-tag"></span>
+                </div>
+                <div class="card-title">${p.title}</div>
+                <div class="card-desc">${p.shortDesc}</div>
+              </div>
+              <div class="card-info-bottom">
+                <div class="card-skills">
+                  ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
+                </div>
+                <span class="card-status ${p.status}">${p.statusLabel}</span>
+              </div>
+              <span class="card-arrow">→</span>
+            </div>
+          </div>
+        </a>
     </div>
-   <div class="first-window">
-        <img class="bloc"  src="img\bloc-illustration.png" alt="">
-        <img class="first-draw" src="img\running-draw.jpg" alt="">
-    </div>
-    <div class="second-window">
-        <img class="bloc2"  src="img\bloc-illustration.png" alt="">
-        <img class="second-draw" src="img\enfer-et-paradis-draw.jpg" alt="">
-    </div>
-    <div class="third-window">
-        <img class="bloc3"  src="img\bloc-illustration.png" alt="">
-        <img class="third-draw" src="img\brundo-draw.jpg" alt="">
-    </div>
-    <div class="fourth-window">
-        <img class="bloc4"  src="img\bloc-illustration.png" alt="">
-        <video class="first-animation" src="video\ball-video.mp4" alt="" autoplay loop muted> </video>
-    </div>
-    <div class="fifth-window">
-        <img class="bloc5"  src="img\bloc-illustration.png" alt="">
-        <video class="second-animation" src="video\fight-video.mp4" alt="" autoplay loop muted> </video>
-    </div>
-     <div class="banniere-last">
-                <a href="https://www.linkedin.com/in/neyjah-bernos-a967b3349/">
-                <img class="ln-icon" src="img\linkdin.png" alt="">
-                </a>
-                <a href="https://github.com/neyjahbernos">
-                    <img class="github-icon" src="img\Boutton-github.png" alt="">
-                </a>
-                <a href="https://www.instagram.com/narodoro/">
-                    <img class="insta-icon" src="img\INSTA.png" alt="">
-                </a>
-                <img class="lastbanniere" src="img/Banniere-page-dev_top.png" alt="">
-    </div>
-    <footer>
-            <p class="footer-p">Bernos © </p>
-    </footer>
+
+  <!-- FILTRES -->
+  <div class="filters">
+    <a href="branding.html">
+        <button class="filter-btn" onclick="filterProjects('all', this)">Branding</button>
+    </a>
+    <a href="dig-des-page.html">
+        <button class="filter-btn" onclick="filterProjects('web', this)">digital design</button>
+    </a>
+    <a href="illustration.html">
+       <button class="filter-btn active" onclick="filterProjects('design', this)">animation et illustration</button>
+    </a>
+    <a href="dev-page.html">
+        <button class="filter-btn" onclick="filterProjects('gestion', this)">Dev/web</button>
+    </a>
+  </div>
+
+
+  <div class="scroll-hint" id="scrollHint">
+    <span>Défiler</span>
+    <div class="scroll-hint-arrow"></div>
+  </div>
+
+  <script src="ver.js"></script>
 </body>
+</html>

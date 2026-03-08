@@ -7,7 +7,7 @@ const PROJECTS = [
     category: "design",
     status: "ongoing",
     statusLabel: "En cours",
-    icon: "🎨",
+    image: 'img/5.png',
     color: "#e8d5b7",
     shortDesc: "Conception et développement de mon portfolio avec une timeline interactive.",
     fullDesc: "Création d'un site portfolio complet pour présenter mon parcours académique et professionnel. La page principale met en avant une timeline animée qui retrace mon évolution depuis le BAC STI2D jusqu'à mon Bachelor en Chef de projet digital.",
@@ -47,7 +47,7 @@ const PROJECTS = [
     category: "web",
     status: "ongoing",
     statusLabel: "En cours",
-    icon: "💻",
+    icon: "img/5.png",
     color: "#b7d5e8",
     shortDesc: "Développement d'un prototype d'application web dans le cadre du Bachelor.",
     fullDesc: "Conception et développement d'un prototype d'application web dans le cadre du Bachelor 1 Chef de Projet Digital. Le projet comprend la phase de cadrage, les wireframes, le développement front-end et les tests utilisateurs.",
@@ -137,7 +137,7 @@ function renderCards(filter = 'all') {
     <a class="project-card" href="${p.link}">
       <div class="card-inner">
         <div class="card-img" style="background:${p.color}">
-          <span class="emoji">${p.icon}</span>
+          <span class="emoji">${p.image}</span>
         </div>
         <div class="card-info">
           <div>
@@ -162,20 +162,12 @@ function renderCards(filter = 'all') {
   `).join('');
 }
 
-/* ── Filter buttons ── */
-function filterProjects(cat, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  renderCards(cat);
-}
-
 /* ── Scroll hint ── */
 const gridEl = document.getElementById('grid');
 const hint   = document.getElementById('scrollHint');
-if (gridEl && hint) {
+if (true) {
   gridEl.addEventListener('scroll', () => {
     hint.style.opacity = gridEl.scrollTop > 80 ? '0' : '1';
   }, { passive: true });
 }
 
-renderCards();

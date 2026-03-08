@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projets — Titouan</title>
-  <link rel="stylesheet" href="css/style3.css">
+  <link rel="stylesheet" href="css/style5.css">
   <link rel="stylesheet" href="https://use.typekit.net/bwf0pby.css">
+  
   
 </head>
 <body>
@@ -26,17 +27,82 @@
     <div class="online-round"></div>
         <div class="little-rounded-rect">
             <p class="projets-en-cours">2 projets en cours</p>
-        </div>
+            </div>
+    <div class="projects-list">
+        <a class="project-card" href="${p.link}">
+          <div class="card-inner">
+            <div class="card-img">
+              <span class="emoji"></span>
+            </div>
+            <div class="card-img">
+              <span class="emoji"></span>
+            </div>
+            <div class="card-info">
+              <div>
+                <div class="card-meta">
+                  <span class="card-year"></span>
+                  <span class="card-dot"></span>
+                  <span class="card-tag"></span>
+                </div>
+                <div class="card-title">${p.title}</div>
+                <div class="card-desc">${p.shortDesc}</div>
+              </div>
+              <div class="card-info-bottom">
+                <div class="card-skills">
+                  ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
+                </div>
+                <span class="card-status ${p.status}">${p.statusLabel}</span>
+              </div>
+              <span class="card-arrow">→</span>
+            </div>
+          </div>
+        </a>
 
-  <!-- FILTRES -->
+        <a class="project-card" href="${p.link}">
+          <div class="card-inner">
+            <div class="card-img">
+              <span class="emoji"></span>
+            </div>
+            <div class="card-img">
+              <span class="emoji"></span>
+            </div>
+            <div class="card-info">
+              <div>
+                <div class="card-meta">
+                  <span class="card-year"></span>
+                  <span class="card-dot"></span>
+                  <span class="card-tag"></span>
+                </div>
+                <div class="card-title">${p.title}</div>
+                <div class="card-desc">${p.shortDesc}</div>
+              </div>
+              <div class="card-info-bottom">
+                <div class="card-skills">
+                  ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
+                </div>
+                <span class="card-status ${p.status}">${p.statusLabel}</span>
+              </div>
+              <span class="card-arrow">→</span>
+            </div>
+          </div>
+        </a>
+    </div>
+
   <div class="filters">
-    <button class="filter-btn active" onclick="filterProjects('all', this)">Branding</button>
-    <button class="filter-btn" onclick="filterProjects('web', this)">digital design</button>
-    <button class="filter-btn" onclick="filterProjects('design', this)">animation et illustration</button>
-    <button class="filter-btn" onclick="filterProjects('gestion', this)">Dev/web</button>
+    <a href="branding.html">
+        <button class="filter-btn active" onclick="filterProjects('all', this)">Branding</button>
+    </a>
+    <a href="dig-des-page.html">
+        <button class="filter-btn" onclick="filterProjects('web', this)">digital design</button>
+    </a>
+    <a href="illustration.html">
+       <button class="filter-btn" onclick="filterProjects('design', this)">animation et illustration</button>
+    </a>
+    <a href="dev-page.html">
+        <button class="filter-btn" onclick="filterProjects('gestion', this)">Dev/web</button>
+    </a>
   </div>
 
-  <div class="projects-list" id="grid"></div>
 
   <div class="scroll-hint" id="scrollHint">
     <span>Défiler</span>
