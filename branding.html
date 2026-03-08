@@ -5,18 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projets — Titouan</title>
   <link rel="stylesheet" href="css/style3.css">
+  
 </head>
 <body>
 
   <header>
     <div class="header-left">
-      <h1>Mes <em>Projets</em></h1>
       <p>Portfolio — Chef de projet digital</p>
     </div>
     <div class="header-right">
       <span class="status-dot"></span>2 en cours
     </div>
   </header>
+
+  <a href="index.html">
+     <img class="profil-boutton" src="img\profil_portfolio.png" alt="Logo profil">
+  </a>
+
+    <div class="online-round"></div>
+        <div class="little-rounded-rect">
+            <p class="projets-en-cours">2 projets en cours</p>
+        </div>
 
   <!-- FILTRES -->
   <div class="filters">
@@ -26,10 +35,8 @@
     <button class="filter-btn" onclick="filterProjects('gestion', this)">Gestion de projet</button>
   </div>
 
-  <!-- LISTE DES PROJETS -->
   <div class="projects-list" id="grid"></div>
 
-  <!-- INDICATEUR DE DÉFILEMENT -->
   <div class="scroll-hint" id="scrollHint">
     <span>Défiler</span>
     <div class="scroll-hint-arrow"></div>
