@@ -5,37 +5,36 @@ html, body {
 
 /* ── FILTRES ── */
 .filters {
-    position: fixed;
-    top: 4rem;
-    left: 10%;
-    z-index: 50;
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    animation: fadeDown 0.7s 0.1s ease both;
+  position: fixed;
+  top: 4rem;
+  left: 10%;
+  z-index: 50;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  animation: fadeDown 0.7s 0.1s ease both;
 }
 
 .filter-btn {
-    background: none;
-    border: 1.5px solid rgb(64, 39, 11);
-    color: #7a5c3a;
-    padding: 0.35rem 1rem;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-family: 'DM Sans', sans-serif;
-    cursor: pointer;
-    transition: all 0.2s;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-weight: 500;
-    text-decoration: none;
+  background: none;
+  border: 1.5px solid rgb(64, 39, 11);
+  color: var(--text-muted);
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-    background: rgb(61, 32, 6);
-    color: #f0e6d3;
-    border-color: #2a1a0a;
+  background: rgb(61, 32, 6);
+  color: var(--card);
+  border-color: var(--text);
 }
 
 /* ── PROFIL ── */
