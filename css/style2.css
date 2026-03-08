@@ -3,6 +3,7 @@ html, body {
     padding: 0;
 }
 
+/* ── FILTRES ── */
 .filters {
   position: fixed;
   top: 4rem;
@@ -36,14 +37,14 @@ html, body {
   border-color: var(--text);
 }
 
-
+/* ── PROFIL ── */
 .profil-boutton {
     position: fixed;
-    margin-top: 1%;
-    left: 4%;
+    top: 1%;
+    left: 2%;
     z-index: 18;
-    width: 15vh;
-    height: 15vh;
+    width: clamp(50px, 8vw, 100px);
+    height: clamp(50px, 8vw, 100px);
     margin: 0;
     padding: 0;
     transition: 1s ease;
@@ -53,11 +54,11 @@ html, body {
     transform: scale(1.1);
 }
 
-
+/* ── BODY ── */
 body {
     position: relative;
     width: 100%;
-    height: 320vh;
+    min-height: 100vh;
     background-image: url("../PORTFO_FOND_3.png");
     background-position: center;
     background-size: cover;
@@ -66,294 +67,330 @@ body {
     padding: 0;
 }
 
+/* ── MAIN ── */
+main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* ── BANNIERE HAUT ── */
 .banniere {
-    position: absolute;
-    width: 218.5vh;
-    height: 50vh;
+    position: relative;
+    width: 100%;
+    padding: 12vh 5% 4vh;
     z-index: 3;
-}
-
-.titre {
-    position : absolute;
-    font-family: "ohno-softie-variable", sans-serif;
-    color: #422702;
-    font-weight: 400;
-    left: 10%;
-    top: 10vh;
-    text-align: center;
-    font-variation-settings: "wght" 400;
-    z-index : 10;
-}
-
-.video4 {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Banniere-haut {
     position: absolute;
-    bottom : 1vh;
+    bottom: 0;
+    left: 0;
     width: 100%;
     z-index: 3;
-}
-
-.Fil-dev {
-    position: absolute;
-    top: 43vh;
-    width: 90.5vh;
-    height: 250vh;
-    left: 30%;
-    z-index: 2;
-}
-
-.Window1 {
-    position: absolute;
-    top: 70vh;
-    left: 0px;
-    z-index: 2;
-    width: 150vh;
-    height: 5vh ;
-    transition: 1s ease;
-}
-
-.minishell-window {
-    position : relative;
-    top : 0vh;
-    width: 60%;
-    left: 40px;
-    z-index: 3;
-    transition: 1s ease;
-}
-
-.video1 {
-    position: absolute; 
-    width: 55%;
-    top: 35px;
-    left: 6%;
-    border-radius: 15px;
-    object-fit: cover;
-    z-index: 3; 
     pointer-events: none;
 }
 
-.Window1:hover {
-    transform: translateX(-15px);
-}
-
-.ombre-firstwindow {
-    position: absolute;
-    top : 75vh;
-    left: 70px;
-    width: 90vh;
-    z-index: 1 ;
-}
-
-.info-window1 {
-    position: absolute;
-    top: 120.5vh;
-    left: 22.5%;
-    z-index: 8;
-    width: 100vh;
-    height: 5vh ;
-    transition: 1s ease;
+.titre {
     font-family: "ohno-softie-variable", sans-serif;
     color: #422702;
     font-weight: 400;
-    font-variation-settings: "wght" 400; 
+    text-align: center;
+    font-variation-settings: "wght" 400;
+    font-size: clamp(0.75rem, 1.5vw, 1.1rem);
+    line-height: 1.7;
+    max-width: 800px;
+    padding: 0 5%;
+    z-index: 10;
+    position: relative;
 }
 
-.text-info1 {
+/* ── FIL (décoratif) ── */
+.Fil-dev {
+    position: absolute;
+    top: 43vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(60px, 8vw, 120px);
+    height: 80%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ══════════════════════════════════════
+   LAYOUT DES PROJETS — DESKTOP
+══════════════════════════════════════ */
+.projets-section {
+    position: relative;
+    width: 100%;
+    padding: 4vh 0 8vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    z-index: 3;
+}
+
+/* Chaque ligne projet : fenêtre + info côte à côte */
+.projet-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3%;
+    padding: 0 5%;
+    position: relative;
+}
+
+/* Alterner gauche/droite */
+.projet-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* ── FENÊTRES (Window1, Window2) ── */
+.Window1,
+.Window2 {
+    position: relative;
+    width: 48%;
+    max-width: 700px;
+    z-index: 2;
+    transition: transform 0.4s ease;
+    top: auto;
+    left: auto;
+}
+
+.Window1:hover,
+.Window2:hover {
+    transform: translateX(-10px);
+}
+
+.minishell-window,
+.Mini-jeu-window {
+    position: relative;
+    width: 100%;
+    left: auto;
+    top: auto;
+    z-index: 3;
+    display: block;
+}
+
+.video1,
+.video {
+    position: absolute;
+    border-radius: clamp(6px, 1vw, 15px);
+    object-fit: cover;
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* Positionnement vidéo Minishell dans sa fenêtre */
+.video1 {
+    width: 55%;
+    top: 12%;
+    left: 7%;
+}
+
+/* Positionnement vidéo Mini-jeu dans sa fenêtre */
+.video {
+    width: 65%;
+    top: 8%;
+    left: 27%;
+}
+
+/* ── INFOS (info-window1, info-window2) ── */
+.info-window1,
+.info-window2 {
+    position: relative;
+    width: 38%;
+    max-width: 500px;
+    z-index: 4;
+    top: auto;
+    left: auto;
+    transition: transform 0.4s ease;
+    font-family: "ohno-softie-variable", sans-serif;
+    color: #422702;
+    font-weight: 400;
+    font-variation-settings: "wght" 400;
+    align-self: center;
+}
+
+.info-window1:hover,
+.info-window2:hover {
+    transform: translateX(-10px);
+}
+
+.info-minishellwindow,
+.info-minijeuwindow {
+    position: relative;
+    width: 100%;
+    display: block;
+    top: auto;
+    left: auto;
+    z-index: 3;
+}
+
+.text-info1,
+.text-info {
     position: absolute;
     font-family: "ohno-softie-variable", sans-serif;
     color: #492f01;
     font-weight: 400;
-    font-variation-settings: "wght" 400; 
-    top: 4vh;
-    left: 6vh;
+    font-variation-settings: "wght" 400;
+    top: 12%;
+    left: 8%;
+    right: 8%;
     z-index: 4;
+    font-size: clamp(0.65rem, 1.2vw, 0.95rem);
+    line-height: 1.6;
 }
 
-.info-minishellwindow {
-    position: absolute;
-    top : 0vh;
-    left: 0vh;
-    width: 70vh;
-    z-index: 3;
-    transition: 1s ease;
-}
-
-.info-window1:hover {
-    transform: translateX(-15px);
-}
-
-.ombre-infowindow {
-    position: absolute;
-    top : 123vh;
-    left: 366px;
-    width: 70vh;
-    z-index: 1 ;
-}
-
-.Window2 {
-    position: absolute;
-    top: 176.5vh;
-    left: 30%;
-    z-index: 2;
-    width: 100vh;
-    height: 5vh ;
-    transition: 1s ease;
-}
-
-.Mini-jeu-window {
-    position: relative;
-    top: 0vh; 
-    left: 300px;
-    width: 95%;
-    z-index: 2;
-
-}
-
-.Window2:hover {
-    transform: translateX(-15px);
-}
-
-.info-window2 {
-    position: absolute;
-    top: 230.5vh;
-    left: 28%;
-    z-index: 2;
-    width: 100vh;
-    height: 5vh ;
-    transition: 1s ease;
-    font-family: "ohno-softie-variable", sans-serif;
-    color: #4d2b01;
-    font-weight: 400;
-    font-variation-settings: "wght" 400; 
-}
-
-.text-info {
-    position: absolute;
-    font-family: "ohno-softie-variable", sans-serif;
-    color: #532b03;
-    font-weight: 400;
-    font-variation-settings: "wght" 400; 
-    top: 4vh;
-    left: 6vh;
-    z-index: 4;
-}
-
-.video {
-    position: absolute; 
-    width: 70%;
-    top: 5vh;
-    left: 380px;
-    border-radius: 15px;
-    object-fit: cover;
-    z-index: 3; 
-    pointer-events: none;
-}
-
-.info-minijeuwindow {
-    position: absolute;
-    top : 120vh;
-    left: 50vh;
-    width: 70vh;
-    z-index: 4;
-    transition: 1s ease;
-}
-
-.info-minijeuwindow {
-    position: absolute;
-    top : 0vh;
-    left: 0px;
-    width: 70vh;
-    z-index: 4 ;
-}
-
-.info-window2:hover {
-    transform: translateX(-15px);
-}
-
-.ombre-mini-jeuwindow {
-   position: absolute;
-    top : 232.5vh;
-    left: 450px;
-    width: 70vh;
-    z-index: 1 ;
-}
-
+/* ── OMBRES — cachées, les vraies ombres viennent des box-shadow ── */
+.ombre-firstwindow,
+.ombre-infowindow,
+.ombre-mini-jeuwindow,
 .ombre-infojeuwindow {
-    position: absolute;
-    top : 185.5vh;
-    left: 821px;
-    width: 90vh;
-    z-index: 1 ;
+    display: none;
 }
 
-
+/* ══════════════════════════════════════
+   BANNIERE BAS
+══════════════════════════════════════ */
 .banniere-last {
-    position : absolute;
-    width: 218vh;
-    height: 20vh;
-    top: 2000px;
-    left: 0%;
+    position: relative;
+    width: 100%;
+    padding: 6vh 0 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     z-index: 10;
 }
 
 .lastbanniere {
     position: absolute;
     width: 100%;
-    top: 0vh;
-    left: 0%;
+    bottom: 0;
+    left: 0;
     z-index: 10;
-}
-.github-icon {
-    position: absolute;
-    top: 12vh;
-    left : 40%;
-    width: 5%;
-    z-index: 12;
-    transition: 0.4s ease;
+    pointer-events: none;
 }
 
-.github-icon:hover {
-    transform: translateY(-30px);
-}
-
-.ln-icon {
-    position: absolute;
-    top: 12vh;
-    left : 46.6%;
-    width: 4.9%;
-    height: 54%;;
-    z-index: 13;
-    transition: 0.4s ease;
-}
-
+.github-icon,
+.ln-icon,
 .insta-icon {
-    position: absolute;
-    top: 12vh;
-    left : 53%;
-    width: 4.9%;
-    height: 54%;;
-    z-index: 13;
-    transition: 0.5s ease;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: clamp(40px, 5vw, 70px);
+    height: clamp(40px, 5vw, 70px);
+    z-index: 12;
+    transition: transform 0.4s ease;
+    margin: 0 1.5%;
+    object-fit: contain;
 }
+
+.github-icon:hover,
+.ln-icon:hover,
 .insta-icon:hover {
-    transform: translateY(-30px);
+    transform: translateY(-12px);
 }
 
-.ln-icon:hover {
-    transform: translateY(-30px);
-}
-
+/* ── FOOTER ── */
 .footer-p {
-    position:absolute;
-    text-align: center;
-    top : 2260px;
-    right : 7%;
-    z-index: 19;
-     font-family: "ohno-softie-variable", sans-serif;
+    position: relative;
+    text-align: right;
+    padding: 1.5rem 7% 1rem;
+    font-family: "ohno-softie-variable", sans-serif;
     color: #3f2a02;
     font-weight: 400;
     font-variation-settings: "wght" 400;
+    font-size: 0.9rem;
+    top: auto;
+    right: auto;
+}
+
+/* ── BARRE NAV ── */
+.barre-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* ══════════════════════════════════════
+   ANIMATIONS
+══════════════════════════════════════ */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-14px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE — TABLETTE (max 1024px)
+══════════════════════════════════════ */
+@media (max-width: 1024px) {
+    .Window1, .Window2 { width: 52%; }
+    .info-window1, .info-window2 { width: 40%; }
+    .Fil-dev { display: none; }
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE — MOBILE (max 700px)
+══════════════════════════════════════ */
+@media (max-width: 700px) {
+    .filters {
+        top: auto;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
+        background: rgba(240, 230, 211, 0.85);
+        backdrop-filter: blur(6px);
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        width: 90%;
+    }
+
+    .filter-btn { font-size: 0.65rem; padding: 0.3rem 0.7rem; }
+
+    .banniere { padding: 14vh 5% 6vh; }
+
+    .titre { font-size: clamp(0.75rem, 3.5vw, 1rem); }
+
+    .Fil-dev { display: none; }
+
+    /* Projets empilés verticalement sur mobile */
+    .projet-row,
+    .projet-row.reverse {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        padding: 0 4%;
+    }
+
+    .Window1, .Window2 {
+        width: 95%;
+        max-width: 100%;
+    }
+
+    .info-window1, .info-window2 {
+        width: 95%;
+        max-width: 100%;
+    }
+
+    .Window1:hover, .Window2:hover,
+    .info-window1:hover, .info-window2:hover {
+        transform: none;
+    }
+
+    .text-info1, .text-info {
+        font-size: clamp(0.7rem, 3vw, 0.9rem);
+    }
+
+    .github-icon, .ln-icon, .insta-icon {
+        width: clamp(36px, 10vw, 55px);
+        height: clamp(36px, 10vw, 55px);
+    }
+
+    .banniere-last { padding: 4vh 0 8vh; }
 }
