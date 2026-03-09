@@ -783,11 +783,55 @@ body {
     .profil-boutton {
         width: clamp(50px, 15vw, 80px);
     }
+
+    .little-rounded-rect {
+    width: 150px;
+    padding: 0 15px;
+    left: 3%;
+    height: clamp(25px, 3vh, 40px);
+    z-index: 20;
+}
     
     .barre-gauche-p {
         left: clamp(60px, 15%, 100px);
         font-size: clamp(10px, 2vw, 14px);
     }
+    
+    .word {
+        padding: 0.4em 0.8em;
+        font-size: clamp(10px, 2vw, 14px);
+    }
+
+    .text-first-window {
+        font-size: clamp(5px, 2vw, 9px);
+        padding: 0;
+    }
+    .card {
+        width: clamp(200px, 40vw, 280px);
+        height: clamp(120px, 25vw, 170px);
+    }
+}
+
+@media screen and (max-width: 374px) {
+
+    .profil-boutton {
+        width: clamp(50px, 15vw, 80px);
+    }
+
+     .little-rounded-rect {
+    width: 200px;
+    padding: 0 15px;
+    left: 3%;
+    height: clamp(25px, 3vh, 40px);
+    z-index: 20;
+}
+    
+    .barre-gauche-p {
+        left: clamp(60px, 15%, 100px);
+        font-size: clamp(10px, 2vw, 14px);
+    }
+
+    
     
     .word {
         padding: 0.4em 0.8em;

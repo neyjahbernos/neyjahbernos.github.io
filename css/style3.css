@@ -421,6 +421,41 @@ header {
     }
     .anna-mobile {
       display: block;
+      width: 100%;
+    }
+  .card-inner { margin: 1rem; width: calc(100% - 2rem); height: calc(100% - 2rem); }
+  .card-img { width: 100%; }
+  .card-img .emoji { font-size: 4rem; }
+  .card-info { padding: 1.5rem; gap: 1rem; }
+}
+
+@media (max-width: 480px) {
+
+    .filters {
+      position: fixed;
+      top : 10vh;
+    }
+
+   .profil-boutton {
+        width: 25%;
+        top : 86%;
+        left : 65%;
+      
+    }
+
+    .little-rounded-rect {
+      width: 25vh;
+    }
+
+    .online-round {
+      display: none;
+    }
+
+    .anna-desktop {
+    display: none;
+    }
+    .anna-mobile {
+      width: 100%;
     }
   .card-inner { margin: 1rem; width: calc(100% - 2rem); height: calc(100% - 2rem); }
   .card-img { width: 100%; }
