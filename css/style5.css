@@ -263,6 +263,10 @@ header {
   width: 100%;
 }
 
+.primamobile {
+  display: none;
+}
+
 
 
 .card-img {
@@ -468,6 +472,15 @@ header {
         top : 86%;
         left : 65%;
       
+    }
+
+    .primadesktop {
+      display: none;
+    }
+
+    .primamobile {
+      display: block;
+      width: 100%;
     }
 
     .regardcroisesmobile {
