@@ -9,7 +9,7 @@
   --accent: #6b8fa8;
   --accent2: #a0734a;
   --brown-border: #8B5C2A;
-  --brutal-shadow: 6px 6px 0px #8B5C2A;
+  --brutal-shadow: 6px 6px 0px #583917;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -217,7 +217,7 @@ header {
   height: calc(100% - 4rem);
   margin: 2rem;
   border-radius: 16px;
-  border: 2px solid var(--brown-border);
+  border: 2px solid rgb(82, 45, 11);
   box-shadow: var(--brutal-shadow);
   overflow: hidden;
 }
