@@ -197,7 +197,54 @@ header {
   width: 100%;
 }
 
+.project-card2 {
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: stretch;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-inner2 {
+  display: flex;
+  align-items: stretch;
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+  margin: 2rem;
+  border-radius: 16px;
+  border: 2px solid rgb(82, 45, 11);
+  box-shadow: var(--brutal-shadow);
+  overflow: hidden;
+}
+
+.agatedesktop {
+  display: block;
+  width: 100%;
+}
+
+.anna-mobile {
+  display: none;
+}
+
+
+
 .card-img {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card2-img {
   width: 100%;
   flex-shrink: 0;
   display: flex;
