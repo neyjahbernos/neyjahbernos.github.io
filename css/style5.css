@@ -360,8 +360,12 @@ header {
   50%      { transform: rotate(45deg) translateY(5px); }
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 700px) {
+
+    .filters {
+      position: fixed;
+      top : 10vh;
+    }
   .card-inner { margin: 1rem; width: calc(100% - 2rem); height: calc(100% - 2rem); }
   .card-img { width: 35%; }
   .card-img .emoji { font-size: 4rem; }
