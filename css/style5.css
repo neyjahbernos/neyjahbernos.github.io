@@ -473,6 +473,9 @@ header {
         left : 65%;
       
     }
+    .little-rounded-rect {
+      width: 24vh;
+    }
 
     .primadesktop {
       display: none;
