@@ -339,7 +339,6 @@ header {
   font-style: italic;
 }
 
-/* ── ANIMATIONS ── */
 @keyframes fadeDown {
   from { opacity: 0; transform: translateY(-14px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -366,6 +365,14 @@ header {
       position: fixed;
       top : 10vh;
     }
+
+    .profil-boutton {
+        width: 25%;
+        top : 86%;
+        left : 65%;
+      
+    }
+
   .card-inner { margin: 1rem; width: calc(100% - 2rem); height: calc(100% - 2rem); }
   .card-img { width: 35%; }
   .card-img .emoji { font-size: 4rem; }

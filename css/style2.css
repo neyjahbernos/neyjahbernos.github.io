@@ -303,6 +303,14 @@ main {
 }
 
 @media (max-width: 700px) {
+
+    .profil-boutton {
+        position: fixed;
+        left : 65%;
+        top: 99vh;
+        width: 20% ;
+        height: 10%;
+    }
     .filters {
       position: fixed;
       top : 10vh;
