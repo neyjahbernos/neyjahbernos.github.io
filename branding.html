@@ -62,7 +62,7 @@
         <a class="project-card2" href="${p.link}">
           <div class="card-inner2">
             <div class="card2-img">
-               <img class="agatedesktop" src="img/agatecardhorizontal.png" alt="">
+               <img class="agatedesktop" src="img/agate horizontal new.png" alt="">
               <img class="anna-mobile" src="img/IMGannavertical.png" alt="">
             
             </div>
@@ -86,7 +86,39 @@
             </div>
           </div>
         </a>
+        
+        <a class="project-card3" href="${p.link}">
+                  <div class="card-inner3">
+                    <div class="card3-img">
+                       <img class="primadesktop" src="img/primacardhorizontal.png" alt="">
+                      <img class="anna-mobile" src="img/IMGannavertical.png" alt="">
+                    
+                    </div>
+                    <div class="card-info">
+                      <div>
+                        <div class="card-meta">
+                          <span class="card-year"></span>
+                          <span class="card-dot"></span>
+                          <span class="card-tag"></span>
+                        </div>
+                        <div class="card-title">${p.title}</div>
+                        <div class="card-desc">${p.shortDesc}</div>
+                      </div>
+                      <div class="card-info-bottom">
+                        <div class="card-skills">
+                          ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
+                        </div>
+                        <span class="card-status ${p.status}">${p.statusLabel}</span>
+                      </div>
+                      <span class="card-arrow">→</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+
     </div>
+
+
 
   <div class="filters">
     <a href="branding.html">

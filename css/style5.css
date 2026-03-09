@@ -223,6 +223,32 @@ header {
   overflow: hidden;
 }
 
+.project-card3 {
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: stretch;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-inner3 {
+  display: flex;
+  align-items: stretch;
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+  margin: 2rem;
+  border-radius: 16px;
+  border: 2px solid rgb(82, 45, 11);
+  box-shadow: var(--brutal-shadow);
+  overflow: hidden;
+}
+
 .agatedesktop {
   display: block;
   width: 100%;
@@ -230,6 +256,11 @@ header {
 
 .anna-mobile {
   display: none;
+}
+
+.primadesktop {
+  display: block;
+  width: 100%;
 }
 
 
@@ -245,6 +276,16 @@ header {
 }
 
 .card2-img {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card3-img {
   width: 100%;
   flex-shrink: 0;
   display: flex;
