@@ -187,7 +187,16 @@ header {
   overflow: hidden;
 }
 
-/* Left: colored image zone */
+.regardcroisesmobile {
+   display: none ;
+   
+}
+
+.regardcroisesdesktop {
+  display: block;
+  width: 100%;
+}
+
 .card-img {
   width: 100%;
   flex-shrink: 0;
@@ -373,8 +382,18 @@ header {
       
     }
 
+    .regardcroisesmobile {
+      display: block;
+      width: 100%;
+    }
+
+    .regardcroisesdesktop {
+   display: none ;
+   }
+
+
   .card-inner { margin: 1rem; width: calc(100% - 2rem); height: calc(100% - 2rem); }
-  .card-img { width: 35%; }
+  .card-img { width: 100%; }
   .card-img .emoji { font-size: 4rem; }
   .card-info { padding: 1.5rem; gap: 1rem; }
 }
