@@ -1,9 +1,9 @@
  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --brun:       rgb(57, 34, 8);
+      --brun:       rgb(214, 214, 214);
       --brun-clair: rgb(236, 218, 196);
-      --fond:       #c9a97a;
+      --fond:       #0008ff;
       --card-bg:    rgba(236, 218, 196, 0.6);
       --border-r:   18px;
       --gap:        14px;
@@ -17,7 +17,6 @@
       color: var(--brun);
       background-color: var(--fond);
       /* Remplace par : background-image: url("../PORTFO_FOND_3.png"); */
-      background-image: url("../PORTFO_FOND_3.png");
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
