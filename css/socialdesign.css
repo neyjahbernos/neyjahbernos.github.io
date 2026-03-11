@@ -1,0 +1,279 @@
+:root {
+      --brun:       rgb(57, 34, 8);
+      --brun-clair: rgb(236, 218, 196);
+      --card-bg:    rgba(236, 218, 196, 0.6);
+      --border-r:   18px;
+      --gap:        12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      color: var(--brun);
+      background-image: url("../PORTFO_FOND_3.png");
+      background-color: #c9a97a;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+          min-height: 100vh;
+        }
+      
+        .filters {
+      position: fixed;
+      top: 4rem;
+      left: 10%;
+      z-index: 50;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      animation: fadeDown 0.7s 0.1s ease both;
+    }
+
+    .filter-btn {
+      background: none;
+      border: 1.5px solid rgb(64, 39, 11);
+      color: var(--text-muted);
+      padding: 0.35rem 1rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+      transition: all 0.2s;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: rgb(61, 32, 6);
+      color: var(--card);
+      border-color: var(--text);
+    }
+
+    .profil-boutton {
+        position: fixed;
+        top: 1%;
+        left: 2%;
+        z-index: 19;
+        width: clamp(60px, 10vw, 120px);
+        height: auto;
+        aspect-ratio: 1;
+        margin: 0;
+        padding: 0;
+        transition: transform 1s ease;
+    }
+
+
+    /* ── PAGE ── */
+    .page {
+      padding: 52px 6% 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    /* ── HEADER ── */
+    .page-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      padding-bottom: 40px;
+    }
+
+    .page-title {
+      opacity: 0%;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 500;
+      color: var(--brun);
+      text-decoration: none;
+      background: none;
+      border: 2.5px solid var(--brun);
+      border-radius: 20px;
+      padding: 0.35rem 1rem;
+      white-space: nowrap;
+      transition: background 0.2s, color 0.2s;
+      box-shadow: 4px 4px 0px var(--brun);
+    }
+    .back-btn:hover {
+      background: var(--brun);
+      color: var(--brun-clair);
+    }
+
+    /* ── BLOC PROJET ── */
+    .projet-bloc {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* ── EN-TÊTE PROJET ── */
+    .projet-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .projet-name {
+      font-size: clamp(1rem, 2vw, 1.4rem);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .projet-name::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brun);
+      flex-shrink: 0;
+    }
+
+    .projet-meta-inline {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.55;
+    }
+
+    .projet-meta-inline span::before {
+      content: '·';
+      margin-right: 6px;
+    }
+
+    /* ── GRILLE ── */
+    /*
+      Utilise les classes de layout sur .projet-grid :
+      .layout-auto    → colonnes auto (taille libre, wrapping)
+      .layout-2       → 2 colonnes égales
+      .layout-3       → 3 colonnes égales
+      .layout-4       → 4 colonnes égales
+      .layout-mixed   → colonnes de tailles variées (stories + posts)
+      .layout-stories → colonnes portrait uniquement
+    */
+
+    .projet-grid {
+      display: grid;
+      gap: var(--gap);
+    }
+
+    /* 2 colonnes */
+    .layout-2 { grid-template-columns: repeat(2, 1fr); }
+
+    /* 3 colonnes */
+    .layout-3 { grid-template-columns: repeat(3, 1fr); }
+
+    /* 4 colonnes */
+    .layout-4 { grid-template-columns: repeat(4, 1fr); }
+
+    /* Mixed : 2 stories (portrait) + 1 post carré */
+    .layout-mixed { grid-template-columns: 1fr 1fr 1.6fr; }
+
+    /* Stories uniquement : colonnes portrait auto */
+    .layout-stories { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+
+    /* ── CELLULE ── */
+    .cell {
+      background: var(--card-bg);
+      border-radius: var(--border-r);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* span sur 2 colonnes */
+    .cell.span-2 { grid-column: span 2; }
+
+    /* span sur 2 lignes */
+    .cell.span-row-2 { grid-row: span 2; }
+
+    .cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Ratios prédéfinis (pour les placeholders et les imgs sans hauteur fixée) */
+    .cell.ratio-square    { aspect-ratio: 1 / 1; }
+    .cell.ratio-portrait  { aspect-ratio: 9 / 16; }
+    .cell.ratio-landscape { aspect-ratio: 16 / 9; }
+    .cell.ratio-post      { aspect-ratio: 4 / 5; }
+    .cell.ratio-banner    { aspect-ratio: 3 / 1; }
+
+    /* ── PLACEHOLDER ── */
+    .placeholder {
+      width: 100%;
+      height: 100%;
+      min-height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.35;
+      padding: 16px;
+      text-align: center;
+    }
+
+    /* ── LÉGENDE optionnelle ── */
+    .cell-caption {
+      padding: 10px 14px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.6;
+      flex-shrink: 0;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .layout-4 { grid-template-columns: repeat(3, 1fr); }
+      .layout-mixed { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 700px) {
+      .page { padding: 36px 5% 60px; gap: 48px; }
+
+      .page-title { font-size: clamp(1.6rem, 7vw, 2.5rem); }
+
+      .page-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+
+      .projet-header { flex-direction: column; align-items: flex-start; gap: 6px; }
+
+      .layout-2,
+      .layout-3,
+      .layout-4,
+      .layout-mixed { grid-template-columns: repeat(2, 1fr); }
+
+      .layout-stories { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+
+      .cell.span-2 { grid-column: span 1; }
+    }
+
+    @media (max-width: 420px) {
+      .layout-2,
+      .layout-3,
+      .layout-4,
+      .layout-mixed,
+      .layout-stories { grid-template-columns: 1fr 1fr; }
+    }
