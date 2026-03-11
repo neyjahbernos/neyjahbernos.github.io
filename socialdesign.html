@@ -1,40 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/socialdesign.css">
-    <link rel="icon" type="image/png" sizes="42x42" href="profil_portfolio.png">
-    <link rel="stylesheet" href="https://use.typekit.net/bwf0pby.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/socialdesign.css">
+  <link rel="icon" type="image/png" sizes="42x42" href="profil_portfolio.png">
+  <link rel="stylesheet" href="https://use.typekit.net/bwf0pby.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <header>
-
-      <div class="filters">
+  <div class="filters">
     <a href="branding.html">
-        <button class="filter-btn" onclick="filterProjects('all', this)">Branding</button>
+      <button class="filter-btn">Branding</button>
     </a>
     <a href="socialdesign.html">
-        <button class="filter-btn active" onclick="filterProjects('web', this)">social design</button>
+      <button class="filter-btn active">Social Design</button>
     </a>
     <a href="illustration.html">
-       <button class="filter-btn" onclick="filterProjects('design', this)">animation et illustration</button>
+      <button class="filter-btn">Animation et illustration</button>
     </a>
     <a href="dev-page.html">
-        <button class="filter-btn" onclick="filterProjects('gestion', this)">Dev/web</button>
+      <button class="filter-btn">Dev/web</button>
     </a>
   </div>
 </header>
-     <nav class="barre-nav" id="ma-barre-nav-fixe">
-        <a href="index.html">
-            <img class="profil-boutton" src="img\profil_portfolio.png" alt="">
-        </a>
-    </nav>
-    <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  </style>
-</head>
+<nav class="barre-nav" id="ma-barre-nav-fixe">
+  <a href="index.html">
+    <img class="profil-boutton" src="img/profil_portfolio.png" alt="">
+  </a>
+</nav>
+
 <body>
 
 <div class="page">
@@ -43,57 +40,36 @@
     <h1 class="page-title">Social Design</h1>
   </div>
 
+  <!-- ════════════════════════════════
+       PROJET 1 — Prima Scherzo
+  ════════════════════════════════ -->
   <div class="projet-bloc">
     <div class="projet-header">
-      <span class="projet-name">Prima scherzo</span>
+      <span class="projet-name">Prima Scherzo</span>
       <div class="projet-meta-inline">
         <span>Instagram</span>
         <span>2024</span>
       </div>
     </div>
 
-    <!-- Layout 4 colonnes : posts carrés -->
     <div class="projet-grid layout-4">
-
-      <div class="cell ratio-square">
-        <!-- <img src="..." alt=""> -->
-        <div class="placeholder">Post 1</div>
-      </div>
-
-      <div class="cell ratio-square">
-        <div class="placeholder">Post 2</div>
-      </div>
-
-      <div class="cell ratio-square">
-        <div class="placeholder">Post 3</div>
-      </div>
-
-      <div class="cell ratio-square">
-        <div class="placeholder">Post 4</div>
-      </div>
-
-      <div class="cell ratio-square">
-        <div class="placeholder">Post 5</div>
-      </div>
-
-      <div class="cell ratio-square">
-        <div class="placeholder">Post 6</div>
-      </div>
-
-      <div class="cell ratio-square">
-        <div class="placeholder">Post 7</div>
-      </div>
-
-      <div class="cell ratio-square">
-        <div class="placeholder">Post 8</div>
-      </div>
-
+      <div class="cell ratio-square"><div class="placeholder">Post 1</div></div>
+      <div class="cell ratio-square"><div class="placeholder">Post 2</div></div>
+      <div class="cell ratio-square"><div class="placeholder">Post 3</div></div>
+      <div class="cell ratio-square"><div class="placeholder">Post 4</div></div>
+      <div class="cell ratio-square"><div class="placeholder">Post 5</div></div>
+      <div class="cell ratio-square"><div class="placeholder">Post 6</div></div>
+      <div class="cell ratio-square"><div class="placeholder">Post 7</div></div>
+      <div class="cell ratio-square"><div class="placeholder">Post 8</div></div>
     </div>
   </div>
 
-  <!-- ════════════════════════════════════
-       PROJET 2 — Mix stories + posts
-  ════════════════════════════════════ -->
+  <!-- ════════════════════════════════
+       PROJET 2 — Agate
+       Col 1 : Story 1 (portrait)
+       Col 2 : Story 2 (portrait)
+       Col 3 : Post 1 + Post 2 + Post 3 empilés
+  ════════════════════════════════ -->
   <div class="projet-bloc">
     <div class="projet-header">
       <span class="projet-name">Agate</span>
@@ -103,70 +79,54 @@
       </div>
     </div>
 
-    <!-- Layout mixed : stories portrait + post paysage -->
     <div class="projet-grid layout-mixed">
 
+      <!-- Story 1 -->
       <div class="cell ratio-portrait">
-        <div class="placeholder">Story 1</div>
-        <img class="agate1" src="img/agate-post/affiche-pearl-collection.png" alt="">
+        <img src="img/agate-post/affiche-pearl-collection.png" alt="Story 1">
       </div>
 
-      <div class="cell ratio-portrait">
-        <div class="placeholder">Story 2</div>
+      <!-- Story 2 -->
+      <div class="cell ratio-portrait2 story2">
+          <img src="img/agate-post/affiche-BLACKFRIDAY-aghate.png" alt="">
       </div>
-
-      <div class="cell" style="display:flex; flex-direction:column; gap: var(--gap);">
-        <div class="cell ratio-square" style="box-shadow:none; flex:1;">
-          <div class="placeholder">Post 1</div>
+      <!-- 3 posts empilés -->
+      <div class="cell-stack">
+        <div class="cell ratio-landscape video1">
+          <img class="video1" src="img/agate-post/miniature-1-youtube.png" alt="Post 1">
         </div>
-        <div class="cell ratio-square" style="box-shadow:none; flex:1;">
-          <div class="placeholder">Post 2</div>
+        <div class="cell ratio-landscape">
+          <img class="video2" src="img/agate-post/miniature-2-youtube.png" alt="Post 2">
+        </div>
+        <div class="cell ratio-landscape">
+          <img class="video2" src="img/agate-post/MINIIATURE-3-PHOTOSHOP.png" alt="Post 3">
         </div>
       </div>
 
     </div>
   </div>
 
-  <!-- ════════════════════════════════════
-       PROJET 3 — Bannières / affiches
-  ════════════════════════════════════ -->
+  <!-- ════════════════════════════════
+       PROJET 3 — Regards Croisés
+  ════════════════════════════════ -->
   <div class="projet-bloc">
     <div class="projet-header">
-      <span class="projet-name">Regars croisés</span>
+      <span class="projet-name">Regards Croisés</span>
       <div class="projet-meta-inline">
         <span>Affiches</span>
         <span>2023</span>
       </div>
     </div>
 
-    <!-- Layout 3 colonnes : affiches portrait -->
     <div class="projet-grid layout-3">
-
-      <div class="cell ratio-post">
-        <div class="placeholder">Affiche 1</div>
-      </div>
-
-      <div class="cell ratio-post">
-        <div class="placeholder">Affiche 2</div>
-      </div>
-
-      <div class="cell ratio-post">
-        <div class="placeholder">Affiche 3</div>
-      </div>
-
+      <div class="cell ratio-post"><div class="placeholder">Affiche 1</div></div>
+      <div class="cell ratio-post"><div class="placeholder">Affiche 2</div></div>
+      <div class="cell ratio-post"><div class="placeholder">Affiche 3</div></div>
     </div>
 
-    <!-- Bannière pleine largeur en dessous -->
     <div class="projet-grid layout-2">
-
-      <div class="cell ratio-landscape">
-        <div class="placeholder">Bannière 1</div>
-      </div>
-
-      <div class="cell ratio-landscape">
-        <div class="placeholder">Bannière 2</div>
-      </div>
-
+      <div class="cell ratio-landscape"><div class="placeholder">Bannière 1</div></div>
+      <div class="cell ratio-landscape"><div class="placeholder">Bannière 2</div></div>
     </div>
   </div>
 
