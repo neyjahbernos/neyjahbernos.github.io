@@ -188,7 +188,10 @@ body {
 }
 
 .cell.span-2    { grid-column: span 2; }
-.cell.span-row-2 { grid-row: span 2; }
+.cell.span-row-2 {
+  grid-row: span 2;
+  aspect-ratio: unset;
+}
 
 /* Ratios */
 .cell.ratio-square    { aspect-ratio: 1 / 1; }

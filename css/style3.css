@@ -210,6 +210,36 @@ header {
   display: none;
 }
 
+.primadesktop {
+      display: block;
+      width: 100%;
+    }
+
+    .agatedesktop {
+      display: block;
+      width: 100%;
+    }
+.card-inner3 {
+  display: flex;
+  align-items: stretch;
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+  margin: 2rem;
+  border-radius: 16px;
+  border: 2px solid rgb(82, 45, 11);
+  box-shadow: var(--brutal-shadow);
+  overflow: hidden;
+}
+
+.card-img3 {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
 
 .card-inner {
   display: flex;
