@@ -113,7 +113,6 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 16px;
       padding-top: 20px;
-      border-top: 2.5px solid var(--brun);
     }
 
     .meta-item label {

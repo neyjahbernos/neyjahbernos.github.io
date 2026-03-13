@@ -11,12 +11,27 @@
 
     html { scroll-behavior: smooth; }
 
+    .little-rounded-rect {
+      position: fixed;
+      width: 25vh;
+      border-radius: 9999px;
+      top : 93%;
+      margin : 2vh;
+      left : 2%;
+      background-color: rgba(240, 248, 255, 0.455);
+
+    }
+
+    .text-rect {
+     position: relative;
+     color: #0008ff;
+     text-align: center;
+    }
     body {
       font-family: 'DM Sans', sans-serif;
       font-weight: 400;
       color: var(--brun);
       background-color: var(--fond);
-      /* Remplace par : background-image: url("../PORTFO_FOND_3.png"); */
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
@@ -57,7 +72,6 @@
       color: var(--brun-clair);
     }
 
-    /* ── CARTE GÉNÉRIQUE ── */
     .card {
       background: var(--card-bg);
       border: 2.5px solid var(--brun);
