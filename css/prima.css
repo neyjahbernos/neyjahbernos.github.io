@@ -1,7 +1,7 @@
  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --brun:       rgb(89, 25, 25);
+      --brun:       #daccbb;
       --brun-clair: rgb(236, 218, 196);
       --fond:       #aea192;
       --card-bg:    rgba(236, 218, 196, 0.6);
@@ -15,7 +15,7 @@
       font-family: 'DM Sans', sans-serif;
       font-weight: 400;
       color: var(--brun);
-      background-image: url(../img/agate-post/agatefond.png);   
+      background-image: url(../img/prima-post/fondprima.png);   
       /* Remplace par : background-image: url("../PORTFO_FOND_3.png"); */
       background-position: center;
       background-size: cover;

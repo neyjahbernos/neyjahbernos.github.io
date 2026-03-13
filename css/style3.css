@@ -219,6 +219,10 @@ header {
       width: 100%;
     }
 
+    .primamobile {
+      display: none;
+    }
+
     .agatedesktop {
       display: block;
       width: 100%;
