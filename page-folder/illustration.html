@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="42x42" href="profil_portfolio.png">
   <title>Projets — Titouan</title>
-  <link rel="stylesheet" href="css/style5.css">
+  <link rel="stylesheet" href="../css/style3.css">
+  <link rel="icon" type="image/png" sizes="42x42" href="profil_portfolio.png">
   <link rel="stylesheet" href="https://use.typekit.net/bwf0pby.css">
   
   
@@ -22,7 +22,7 @@
   </header>
 
   <a href="index.html">
-     <img class="profil-boutton" src="img\profil_portfolio.png" alt="Logo profil">
+     <img class="profil-boutton" src="..\img\profil_portfolio.png" alt="Logo profil">
   </a>
 
     <div class="online-round"></div>
@@ -30,11 +30,11 @@
             <p class="projets-en-cours">2 projets en cours</p>
             </div>
     <div class="projects-list">
-        <a class="project-card" href="projets/prima.html">
+        <a class="project-card">
           <div class="card-inner">
             <div class="card-img">
-              <img class="primadesktop" src="img/primacardhorizontal.png" alt="">
-              <img class="primamobile" src="img/primascherzovertical.png" alt="">
+              <img class="primadesktop" src="../img/prima-post/drawprima.png " alt="">
+              <img class="primamobile" src="../img/prima-post/verticalprima.png" alt="">
             </div>
             <div class="card-img">
               <span class="emoji"></span>
@@ -60,12 +60,14 @@
           </div>
         </a>
 
-        <a class="project-card2" href="projets/agate.html">
-          <div class="card-inner2">
-            <div class="card2-img">
-               <img class="agatedesktop" src="img/agate horizontal new.png" alt="">
-              <img class="anna-mobile" src="img/IMGannavertical.png" alt="">
-            
+        <a class="project-card">
+          <div class="card-inner">
+            <div class="card-img3">
+              <img class="agatedesktop" src="../img/agate-post/agatedraw.png" alt="">
+              <img class="agatemobile" src="../img/agate-post/verticalagate.png" alt="">
+            </div>
+            <div class="card-img">
+              <span class="emoji"></span>
             </div>
             <div class="card-info">
               <div>
@@ -87,48 +89,49 @@
             </div>
           </div>
         </a>
-        
-        <a class="project-card3" href="projets/regardscrois.html">
-                  <div class="card-inner3">
-                    <div class="card3-img">
-                       <img class="regardcroisesdesktop" src="img/regardcroisesdesktop.png" alt="">
-                      <img class="regardcroisesmobile" src="img/regardcroisesmobile.png" alt="">
-                    </div>
-                    <div class="card-info">
-                      <div>
-                        <div class="card-meta">
-                          <span class="card-year"></span>
-                          <span class="card-dot"></span>
-                          <span class="card-tag"></span>
-                        </div>
-                        <div class="card-title">${p.title}</div>
-                        <div class="card-desc">${p.shortDesc}</div>
-                      </div>
-                      <div class="card-info-bottom">
-                        <div class="card-skills">
-                          ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
-                        </div>
-                        <span class="card-status ${p.status}">${p.statusLabel}</span>
-                      </div>
-                      <span class="card-arrow">→</span>
-                    </div>
-                  </div>
-                </a>
+
+
+        <a class="project-card" href="${p.link}">
+          <div class="card-inner">
+            <div class="card-img">
+               <img class="anna anna-desktop" src="../img/IMGcard1anna.png" alt="">
+              <img class="anna-mobile" src="../img/IMGannavertical.png" alt="">
+            
             </div>
-
+            <div class="card-img">
+              <span class="emoji"></span>
+            </div>
+            <div class="card-info">
+              <div>
+                <div class="card-meta">
+                  <span class="card-year"></span>
+                  <span class="card-dot"></span>
+                  <span class="card-tag"></span>
+                </div>
+                <div class="card-title">${p.title}</div>
+                <div class="card-desc">${p.shortDesc}</div>
+              </div>
+              <div class="card-info-bottom">
+                <div class="card-skills">
+                  ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
+                </div>
+                <span class="card-status ${p.status}">${p.statusLabel}</span>
+              </div>
+              <span class="card-arrow">→</span>
+            </div>
+          </div>
+        </a>
     </div>
-
-
 
   <div class="filters">
     <a href="branding.html">
-        <button class="filter-btn active" onclick="filterProjects('all', this)">Branding</button>
+        <button class="filter-btn" onclick="filterProjects('all', this)">Branding</button>
     </a>
     <a href="socialdesign.html">
         <button class="filter-btn" onclick="filterProjects('web', this)">social design</button>
     </a>
     <a href="illustration.html">
-       <button class="filter-btn" onclick="filterProjects('design', this)">animation et illustration</button>
+       <button class="filter-btn active" onclick="filterProjects('design', this)">animation et illustration</button>
     </a>
     <a href="dev-page.html">
         <button class="filter-btn" onclick="filterProjects('gestion', this)">Dev/web</button>
