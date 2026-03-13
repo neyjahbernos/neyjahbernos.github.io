@@ -81,6 +81,10 @@
       gap: 14px;
     }
 
+    .prima-fondd {
+    width: 80%;
+    }
+
     .project-category {
       font-size: 0.7rem;
       text-transform: uppercase;
