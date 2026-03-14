@@ -107,7 +107,6 @@
       opacity: 0.88;
     }
 
-    /* ── META ── */
     .project-meta {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -129,7 +128,6 @@
       font-weight: 500;
     }
 
-    /* ── GALLERY ── */
     .gallery {
       display: flex;
       flex-direction: column;
@@ -181,13 +179,11 @@
       font-size: 0.7rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      opacity: 0.5;
       aspect-ratio: 16/9;
     }
     .img-placeholder.portrait { aspect-ratio: 3/4; }
     .img-placeholder.square   { aspect-ratio: 1/1; }
 
-    /* ── NEXT PROJECT ── */
     .next-card {
       padding: 28px 40px;
       display: flex;
