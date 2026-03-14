@@ -186,7 +186,6 @@
       font-size: 0.7rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      opacity: 0.5;
       aspect-ratio: 16/9;
     }
     .img-placeholder.portrait { aspect-ratio: 3/4; }
