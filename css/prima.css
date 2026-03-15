@@ -141,7 +141,8 @@
       gap: var(--gap);
     }
 
-    .img-full { width: 100%; }
+    .img-full { width: 190vh;
+    height: 80vh;}
 
     .img-duo {
       display: grid;
@@ -198,6 +199,13 @@
       justify-content: space-between;
       align-items: center;
     }
+
+    
+  .video1 {
+    width: 100%;
+    top: 12%;
+    left: 5%;
+  }
 
     .next-label {
       font-size: 0.62rem;
