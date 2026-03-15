@@ -466,6 +466,66 @@ header {
   50%      { transform: rotate(45deg) translateY(5px); }
 }
 
+@media(max-width: 480px) {
+ .video1 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 100px;
+  object-fit: cover;
+}
+
+
+    .filters {
+      position: fixed;
+      top : 10vh;
+    }
+
+    .profil-boutton {
+        width: 25%;
+        top : 86%;
+        left : 65%;
+      
+    }
+    .little-rounded-rect {
+      width: 24vh;
+    }
+
+    .primadesktop {
+      display: none;
+    }
+
+    .primamobile {
+      display: block;
+      width: 100%;
+    }
+
+     .agatedesktop {
+      display: none ;
+   }
+   .agate-mobile {
+    width: 150%;
+    object-fit: cover;
+    display: block;
+   }
+
+    .regardcroisesmobile {
+      display: block;
+      width: 100%;
+    }
+
+    .regardcroisesdesktop {
+      display: none ;
+   }
+
+   .card-inner { margin: 1rem; width: calc(100% - 2rem); height: calc(100% - 2rem); }
+  .card-img { width: 100%; }
+  .card-img .emoji { font-size: 4rem; }
+  .card-info { padding: 1.5rem; gap: 1rem; }
+
+  
+}
+
 @media (max-width: 700px) {
 
   .video1 {
