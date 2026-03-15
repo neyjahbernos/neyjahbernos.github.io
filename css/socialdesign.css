@@ -151,7 +151,7 @@ body {
   display: flex;
   gap: 20px;
   align-items: center;
-  font-size: 0.72rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   opacity: 0.55;
