@@ -248,7 +248,9 @@ header {
   box-shadow: var(--brutal-shadow);
   overflow: hidden;
 }
-
+.agate-mobile {
+  display: none;
+}
 .agatedesktop {
   display: block;
   width: 100%;
