@@ -258,10 +258,14 @@ header {
   display: none;
 }
 
-.primadesktop {
-  display: block;
-  width: 100%;
+
+
+.video1 {
+    width: 90%;
+    top: 12%;
+    left: 5%;
 }
+
 
 .primamobile {
   display: none;
