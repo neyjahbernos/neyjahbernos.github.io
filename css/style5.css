@@ -260,10 +260,12 @@ header {
 
 
 
-.video1 {
-    width: 110%;
-    top: 12%;
-    left: 5%;
+ .video1 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 
 
@@ -466,6 +468,15 @@ header {
 
 @media (max-width: 700px) {
 
+  .video1 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 100px;
+  object-fit: cover;
+}
+
+
     .filters {
       position: fixed;
       top : 10vh;
@@ -489,6 +500,15 @@ header {
       display: block;
       width: 100%;
     }
+
+     .agatedesktop {
+      display: none ;
+   }
+   .agate-mobile {
+    width: 150%;
+    object-fit: cover;
+    display: block;
+   }
 
     .regardcroisesmobile {
       display: block;
