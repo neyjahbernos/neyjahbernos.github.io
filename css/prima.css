@@ -141,8 +141,7 @@
       gap: var(--gap);
     }
 
-    .img-full { width: 190vh;
-    height: 80vh;}
+    .img-full { width: 100%;}
 
     .img-duo {
       display: grid;
