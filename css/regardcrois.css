@@ -48,7 +48,11 @@
       gap: 14px;
     }
 
-    /* ── BOUTON RETOUR ── */
+    .theimage {
+      width: 80%;
+      object-fit: cover;
+    }
+
     .back-btn {
       display: inline-flex;
       align-items: center;
@@ -196,13 +200,11 @@
       font-size: 0.7rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      opacity: 0.5;
       aspect-ratio: 16/9;
     }
     .img-placeholder.portrait { aspect-ratio: 3/4; }
     .img-placeholder.square   { aspect-ratio: 1/1; }
 
-    /* ── NEXT PROJECT ── */
     .next-card {
       padding: 28px 40px;
       display: flex;
@@ -231,8 +233,7 @@
     .next-title:hover { gap: 22px; }
     .next-title .arrow { font-size: 1.2rem; }
 
-    /* ── RESPONSIVE ── */
-    /* ── TABLETTE ── */
+    
     @media (max-width: 1024px) {
       .hero-section { gap: 32px; }
       .project-meta { grid-template-columns: 1fr 1fr; }
