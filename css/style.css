@@ -22,6 +22,58 @@ body {
     padding: 0;
 }
 
+    #loader {
+      position: fixed;
+      inset: 0;
+      background: #C4966A;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.4s ease;
+    }
+
+    #loader.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+      @keyframes pulse-zoom {
+        0%   { transform: scale(1); }
+        14%  { transform: scale(1.18); }
+        28%  { transform: scale(1); }
+        42%  { transform: scale(1.12); }
+        56%  { transform: scale(1); }
+        100% { transform: scale(1); }
+    }
+
+    #loader img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      animation: pulse-zoom 0.8s ease-in-out infinite;
+    }
+
+    #loader img.done {
+      animation: none;
+      transform: scale(1);
+      transition: transform 5s ease;
+    }
+
+    #loader p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c49458;
+      margin-top: 1.5rem;
+    }
+
+    #main-content {
+      display: none;
+    }
+
 .en-tete {
     position: relative;
     width: 100%;
@@ -378,20 +430,20 @@ body {
 
 .numero-telephone, .email1 {
     position: absolute;
-    left: 15%;
+    left: 20%;
     z-index: 17;
     font-family: "ohno-softie-variable", sans-serif;
     color: #3c2902;
-    font-weight: 500;
-    font-size: clamp(15px, 1.5vw, 15px);
+    font-weight: 400;
+    font-size: clamp(25px, 3vw, 15px);
 }
 
 .numero-telephone {
-    top: 40%;
+    top: 65%;
 }
 
 .email1 {
-    top: 47%;
+    top: 78%;
 }
 
 .first-banniere {
@@ -766,15 +818,15 @@ body {
     }
     .numero-telephone, .email1 {
     font-size: clamp(6px, 1.8vw, 10px);
-    left: 13%;
+    left: 20%;
     }
     
     .numero-telephone {
-        top: 39%;
+        top: 60%;
     }
 
     .email1 {
-        top: 45%;
+        top: 75%;
     }
 
 }
@@ -809,6 +861,19 @@ body {
     .card {
         width: clamp(200px, 40vw, 280px);
         height: clamp(120px, 25vw, 170px);
+    }
+
+     .numero-telephone, .email1 {
+    font-size: clamp(15px, 1.8vw, 10px);
+    left: 20%;
+    }
+    
+    .numero-telephone {
+        top: 63%;
+    }
+
+    .email1 {
+        top: 75%;
     }
 }
 

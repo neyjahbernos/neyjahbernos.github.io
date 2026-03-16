@@ -168,7 +168,6 @@ body {
   margin-right: 6px;
 }
 
-/* ── GRILLES ── */
 .projet-grid {
   display: grid;
   gap: var(--gap);
@@ -180,7 +179,6 @@ body {
 .layout-mixed   { grid-template-columns: 1fr 1fr 0.8fr; }
 .layout-stories { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
 
-/* ── CELLULE ── */
 .cell {
   position: relative;
   overflow: hidden;
