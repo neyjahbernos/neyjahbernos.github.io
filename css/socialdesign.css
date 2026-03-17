@@ -68,7 +68,6 @@ body {
   transition: transform 1s ease;
 }
 
-/* ── PAGE ── */
 .page {
   padding: 52px 6% 80px;
   display: flex;
@@ -76,7 +75,6 @@ body {
   gap: 60px;
 }
 
-/* ── HEADER ── */
 .page-header {
   display: flex;
   align-items: flex-end;
@@ -112,14 +110,12 @@ body {
   color: var(--brun-clair);
 }
 
-/* ── BLOC PROJET ── */
 .projet-bloc {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-/* ── EN-TÊTE PROJET ── */
 .projet-header {
   display: flex;
   align-items: center;

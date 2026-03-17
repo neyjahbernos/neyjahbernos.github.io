@@ -16,14 +16,12 @@
       font-weight: 400;
       color: var(--brun);
       background-image: url(../img/agate-post/agatefond.png);   
-      /* Remplace par : background-image: url("../PORTFO_FOND_3.png"); */
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
       min-height: 100vh;
     }
 
-    /* ── PAGE WRAPPER ── */
     .page {
       max-width: 100%;
       margin: 0 auto;
@@ -33,7 +31,6 @@
       gap: 14px;
     }
 
-    /* ── BOUTON RETOUR ── */
     .back-btn {
       display: inline-flex;
       align-items: center;
@@ -57,7 +54,6 @@
       color: var(--brun-clair);
     }
 
-    /* ── CARTE GÉNÉRIQUE ── */
     .card {
       background: var(--card-bg);
       border: 2.5px solid var(--brun);
@@ -212,14 +208,12 @@
     .next-title:hover { gap: 22px; }
     .next-title .arrow { font-size: 1.2rem; }
 
-    /* ── RESPONSIVE ── */
-    /* ── TABLETTE ── */
+    
     @media (max-width: 1024px) {
       .hero-section { gap: 32px; }
       .project-meta { grid-template-columns: 1fr 1fr; }
     }
 
-    /* ── MOBILE ── */
     @media (max-width: 700px) {
       .page { padding: 24px 5% 60px; gap: 12px; }
 
