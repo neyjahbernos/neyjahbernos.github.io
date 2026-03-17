@@ -187,14 +187,12 @@ body {
   aspect-ratio: unset;
 }
 
-/* Ratios */
 .cell.ratio-square    { aspect-ratio: 1 / 1; }
 .cell.ratio-portrait  { aspect-ratio: 10 / 17; }
 .cell.ratio-landscape { aspect-ratio: 16 / 9; }
 .cell.ratio-post      { aspect-ratio: 4 / 5; }
 .cell.ratio-banner    { aspect-ratio: 3 / 1; }
 
-/* Toutes les images remplissent leur cellule */
 .cell img {
   position: absolute;
   inset: 0;
@@ -204,12 +202,10 @@ body {
   display: block;
 }
 
-/* ── COLONNE EMPILÉE (posts alignés avec les stories) ── */
 .cell-stack {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   gap: var(--gap);
-  /* Prend la même hauteur que les stories voisines */
   align-self: stretch;
 }
 
@@ -219,7 +215,6 @@ body {
   min-height: 0;
 }
 
-/* ── PLACEHOLDER ── */
 .placeholder {
   position: absolute;
   inset: 0;
@@ -233,7 +228,6 @@ body {
   text-align: center;
 }
 
-/* ── LÉGENDE optionnelle ── */
 .cell-caption {
   position: absolute;
   bottom: 0;
@@ -247,7 +241,6 @@ body {
 }
 
 
-/* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
   .layout-4     { grid-template-columns: repeat(3, 1fr); }
   .layout-mixed { grid-template-columns: 1fr 1fr; }
@@ -286,4 +279,43 @@ body {
 @keyframes fadeDown {
   from { opacity: 0; transform: translateY(-14px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+.banniere-last {
+    position: relative;
+    width: 100%;
+    padding: 6vh 0 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+.lastbanniere {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.github-icon,
+.ln-icon,
+.insta-icon {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: clamp(40px, 5vw, 70px);
+    height: clamp(40px, 5vw, 70px);
+    margin: 20px;
+    z-index: 12;
+    transition: transform 0.4s ease;
+    object-fit: contain;
+}
+
+.github-icon:hover,
+.ln-icon:hover,
+.insta-icon:hover {
+    transform: translateY(-12px);
 }

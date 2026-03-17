@@ -408,6 +408,45 @@ transform: translateY(-20px);
     transform: translateY(-30px);
 }
 
+.banniere-last {
+    position: relative;
+    width: 100%;
+    padding: 6vh 0 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+.lastbanniere {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.github-icon,
+.ln-icon,
+.insta-icon {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: clamp(40px, 5vw, 70px);
+    height: clamp(40px, 5vw, 70px);
+    margin: 20px;
+    z-index: 12;
+    transition: transform 0.4s ease;
+    object-fit: contain;
+}
+
+.github-icon:hover,
+.ln-icon:hover,
+.insta-icon:hover {
+    transform: translateY(-12px);
+}
+
 .footer-p {
     position:absolute;
     text-align: center;

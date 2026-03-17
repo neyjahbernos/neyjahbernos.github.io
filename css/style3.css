@@ -76,7 +76,7 @@ body {
 
 
 
-header {
+.header {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 50;
@@ -277,7 +277,6 @@ header {
   z-index: 1;
 }
 
-/* Right: text zone */
 .card-info {
   display: none ;
 }
@@ -376,7 +375,6 @@ header {
   transform: translateX(0);
 }
 
-/* ── SCROLL HINT ── */
 .scroll-hint {
   position: fixed;
   bottom: 2rem;
@@ -415,6 +413,33 @@ header {
   color: var(--text-muted);
   font-style: italic;
 }
+
+.Titouan {
+   display: none;
+}
+
+
+
+.github-icon,
+.ln-icon,
+.insta-icon {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: clamp(40px, 5vw, 70px);
+    height: clamp(40px, 5vw, 70px);
+    margin: 20px;
+    z-index: 12;
+    transition: transform 0.4s ease;
+    object-fit: contain;
+}
+
+.github-icon:hover,
+.ln-icon:hover,
+.insta-icon:hover {
+    transform: translateY(-12px);
+}
+
 
 @keyframes fadeDown {
   from { opacity: 0; transform: translateY(-14px); }

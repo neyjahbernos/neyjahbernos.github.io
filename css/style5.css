@@ -53,30 +53,6 @@ header {
   pointer-events: none;
 }
 
-.header-left h1 {
-  font-family: "ohno-softie-variable", sans-serif;
-  font-size: clamp(2rem, 5vw, 3.8rem);
-  line-height: 1;
-}
-
-.header-left h1 em { font-style: italic; color: var(--accent); }
-
-.header-left p {
- display: none;
-}
-
-.header-right {
-  display: none;
-}
-
-.status-dot {
-  display: inline-block;
-  width: 7px; height: 7px;
-  background: #52c252;
-  border-radius: 50%;
-  margin-right: 5px;
-  animation: pulse 2s infinite;
-}
 
 .little-rounded-rect {
     position: fixed;
@@ -112,7 +88,6 @@ header {
 }
 
 
-/* ── FILTERS ── */
 .filters {
   position: fixed;
   top: 4rem;
@@ -146,7 +121,6 @@ header {
   border-color: var(--text);
 }
 
-/* ── LIST ── */
 .projects-list {
   padding: 0;
   display: flex;
@@ -159,7 +133,6 @@ header {
   top: 0; left: 0; right: 0; bottom: 0;
 }
 
-/* ── CARD ── */
 .project-card {
   width: 100%;
   flex-shrink: 0;
@@ -174,7 +147,6 @@ header {
   color: inherit;
 }
 
-/* Card inner wrapper — brown border + brutal shadow */
 .card-inner {
   display: flex;
   align-items: stretch;
@@ -308,7 +280,6 @@ header {
 }
 
 
-/* Right: text zone */
 .card-info {
   display: none ;
 }
@@ -407,7 +378,6 @@ header {
   transform: translateX(0);
 }
 
-/* ── SCROLL HINT ── */
 .scroll-hint {
   position: fixed;
   bottom: 2rem;
@@ -440,12 +410,50 @@ header {
   opacity: 0.6;
 }
 
-/* ── EMPTY STATE ── */
 .empty {
   text-align: center;
   padding: 4rem;
   color: var(--text-muted);
   font-style: italic;
+}
+
+.banniere-last {
+    position: relative;
+    width: 100%;
+    padding: 6vh 0 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+.lastbanniere {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.github-icon,
+.ln-icon,
+.insta-icon {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: clamp(40px, 5vw, 70px);
+    height: clamp(40px, 5vw, 70px);
+    margin: 20px;
+    z-index: 12;
+    transition: transform 0.4s ease;
+    object-fit: contain;
+}
+
+.github-icon:hover,
+.ln-icon:hover,
+.insta-icon:hover {
+    transform: translateY(-12px);
 }
 
 @keyframes fadeDown {
