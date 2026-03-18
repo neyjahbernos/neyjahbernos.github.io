@@ -373,11 +373,11 @@ body {
     background: var(--bg-color);
     border-radius: 50%;
     z-index: 14;
-    top: 35vh;
+    top: 20vh;
     left: 50%;
     transform: translateX(-50%);
-    width: clamp(200px, 25vw, 400px);
-    height: clamp(200px, 25vw, 400px);
+    width: clamp(500px, 25vw, 400px);
+    height: clamp(500px, 25vw, 400px);
 }
 
 .round-mask {
@@ -393,10 +393,10 @@ body {
 
 .photo-profile {
     position: absolute;
-    bottom: -75%;
-    left: 55%;
+    bottom: -35%;
+    left: 50%;
     transform: translateX(-50%);
-    width: 200%;
+    width: 100%;
     height: auto;
     z-index: 15;
 }
