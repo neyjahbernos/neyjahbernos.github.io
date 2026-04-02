@@ -414,15 +414,11 @@ body {
   font-style: italic;
 }
 
-.Titouan {
-   display: none;
-}
-
-
-
 .github-icon,
 .ln-icon,
-.insta-icon {
+.insta-icon,
+.behance-icon {
+    display: none;
     position: relative;
     top: auto;
     left: auto;
@@ -436,7 +432,8 @@ body {
 
 .github-icon:hover,
 .ln-icon:hover,
-.insta-icon:hover {
+.insta-icon:hover,
+.behance-icon {
     transform: translateY(-12px);
 }
 

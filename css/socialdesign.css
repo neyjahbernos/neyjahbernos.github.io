@@ -14,7 +14,7 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   color: var(--brun);
-  background-image: url("../PORTFO_FOND_3.png");
+  background-image: url("../img/PORTFO_FOND_3.png");
   background-color: #c9a97a;
   background-position: center;
   background-size: cover;
@@ -302,7 +302,7 @@ body {
 
 .github-icon,
 .ln-icon,
-.insta-icon {
+.insta-icon, .behance-icon {
     position: relative;
     top: auto;
     left: auto;
@@ -316,6 +316,7 @@ body {
 
 .github-icon:hover,
 .ln-icon:hover,
-.insta-icon:hover {
+.insta-icon:hover,
+.behance-icon:hover {
     transform: translateY(-12px);
 }

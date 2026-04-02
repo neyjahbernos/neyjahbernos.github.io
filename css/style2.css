@@ -56,7 +56,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url("../PORTFO_FOND_3.png");
+    background-image: url("../img/PORTFO_FOND_3.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -145,7 +145,7 @@ main {
 
 .Window1:hover,
 .Window2:hover {
-    transform: translateX(-10px);
+    transform: translateY(-10px);
 }
 
 .minishell-window,
@@ -197,7 +197,7 @@ main {
 
 .info-window1:hover,
 .info-window2:hover {
-    transform: translateX(-10px);
+    transform: translateY(-10px);
 }
 
 .info-minishellwindow,
@@ -253,7 +253,7 @@ main {
 
 .github-icon,
 .ln-icon,
-.insta-icon {
+.insta-icon, .behance-icon {
     position: relative;
     top: auto;
     left: auto;
@@ -267,7 +267,7 @@ main {
 
 .github-icon:hover,
 .ln-icon:hover,
-.insta-icon:hover {
+.insta-icon:hover, .behance-icon:hover {
     transform: translateY(-12px);
 }
 

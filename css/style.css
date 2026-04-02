@@ -14,7 +14,7 @@ html, body {
 body {
     position: relative;
     width: 100%;
-    background-image: url("../PORTFO_FOND_3.png");
+    background-image: url("../img/PORTFO_FOND_3.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -588,7 +588,7 @@ body {
     margin-top: 10vh;
 }
 
-.github-icon, .ln-icon, .insta-icon {
+.github-icon, .ln-icon, .insta-icon, .behance-icon {
     position: relative;
     top : 20vh;
     width: 50%;
@@ -596,7 +596,7 @@ body {
     transition: transform 0.4s ease;
 }
 
-.github-icon:hover, .ln-icon:hover, .insta-icon:hover {
+.github-icon:hover, .ln-icon:hover, .insta-icon:hover, .behance-icon:hover {
     transform: translateY(-10px);
 }
 
