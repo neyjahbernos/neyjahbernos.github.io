@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Dancing+Script:wght@600&display=swap');
 
 :root {
-  background-image: url("../PORTFO_FOND_3.png");
+  background-image: url("../img/PORTFO_FOND_3.png");
   --card: #f0e6d3;
   --card-dark: #dfd0b8;
   --text: #2a1a0a;
@@ -224,8 +224,7 @@ body {
     }
 
     .agatedesktop {
-      display: block;
-      width: 100%;
+      width: 120%;
     }
 .card-inner3 {
   display: flex;
