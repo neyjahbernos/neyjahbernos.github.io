@@ -197,7 +197,7 @@ main {
 
 .info-window1:hover,
 .info-window2:hover {
-    transform: translateY(-10px);
+   transform: translateY(-10px);
 }
 
 .info-minishellwindow,
