@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="42x42" href="profil_portfolio.png">
+  <title>Branding - Portfolio</title>
+  <link rel="stylesheet" href="../css/style5.css">
+  <link rel="stylesheet" href="https://use.typekit.net/bwf0pby.css">
+  
+  
+</head>
+<body>
+
+
+  <a href="../index.html">
+     <img class="profil-boutton" src="../img/profil_portfolio.png" alt="Logo profil">
+  </a>
+
+  <div class="little-rounded-rect">
+            <p class="projets-en-cours">2 projets en cours</p>
+            </div>
+    <div class="projects-list">
+        <a class="project-card" href="../projets/prima.html">
+          <div class="card-inner">
+            <div class="card-img">
+              <video class="video1" src="../video/good-one.mp4" autoplay loop muted playsinline></video>
+            </div>
+            <div class="card-img">
+              <span class="emoji"></span>
+            </div>
+            <div class="card-info">
+              <div>
+                <div class="card-meta">
+                  <span class="card-year"></span>
+                  <span class="card-dot"></span>
+                  <span class="card-tag"></span>
+                </div>
+                <div class="card-title">${p.title}</div>
+                <div class="card-desc">${p.shortDesc}</div>
+              </div>
+              <div class="card-info-bottom">
+                <div class="card-skills">
+                  ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
+                </div>
+                <span class="card-status ${p.status}">${p.statusLabel}</span>
+              </div>
+              <span class="card-arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card" href="../projets/agate.html">
+          <div class="card-inner">
+            <div class="card2-img">
+               <img class="agatedesktop" src="../img/agate horizontal new.png" alt="">
+              <img class="agate-mobile" src="../img/agate-post/agatevertical.png" alt="">
+            
+            </div>
+            <div class="card-info">
+              <div>
+                <div class="card-meta">
+                  <span class="card-year"></span>
+                  <span class="card-dot"></span>
+                  <span class="card-tag"></span>
+                </div>
+                <div class="card-title">${p.title}</div>
+                <div class="card-desc">${p.shortDesc}</div>
+              </div>
+              <div class="card-info-bottom">
+                <div class="card-skills">
+                  ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
+                </div>
+                <span class="card-status ${p.status}">${p.statusLabel}</span>
+              </div>
+              <span class="card-arrow">→</span>
+            </div>
+          </div>
+        </a>
+        
+        <a class="project-card" href="../projets/regardscrois.html">
+                  <div class="card-inner">
+                    <div class="card3-img">
+                       <img class="regardcroisesdesktop" src="../img/regards-crois/horizontal.avif" alt="">
+                      <img class="regardcroisesmobile" src="../img/regardcroisesmobile.png" alt="">
+                    </div>
+                    <div class="card-info">
+                      <div>
+                        <div class="card-meta">
+                          <span class="card-year"></span>
+                          <span class="card-dot"></span>
+                          <span class="card-tag"></span>
+                        </div>
+                        <div class="card-title">${p.title}</div>
+                        <div class="card-desc">${p.shortDesc}</div>
+                      </div>
+                      <div class="card-info-bottom">
+                        <div class="card-skills">
+                          ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
+                        </div>
+                        <span class="card-status ${p.status}">${p.statusLabel}</span>
+                      </div>
+                      <span class="card-arrow">→</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+
+    </div>
+
+
+
+  <div class="filters">
+    <a href="branding.html">
+        <button class="filter-btn active" onclick="filterProjects('all', this)">Branding</button>
+    </a>
+    <a href="socialdesign.html">
+        <button class="filter-btn" onclick="filterProjects('web', this)">social design</button>
+    </a>
+    <a href="illustration.html">
+       <button class="filter-btn" onclick="filterProjects('design', this)">animation et illustration</button>
+    </a>
+    <a href="dev-page.html">
+        <button class="filter-btn" onclick="filterProjects('gestion', this)">Dev/web</button>
+    </a>
+  </div>
+  
+
+
+  <div class="scroll-hint" id="scrollHint">
+    <div class="scroll-hint-arrow"></div>
+  </div>
+
+  <script src="ver.js"></script>
+</body>
+</html>
