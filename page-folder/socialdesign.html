@@ -28,7 +28,11 @@
 
 <nav class="barre-nav" id="ma-barre-nav-fixe">
   <a href="../index.html">
-    <img class="profil-boutton" src="../img/profil_portfolio.png" alt="">
+    <!-- OPTIMISATION : logo nav — critique, pas de lazy -->
+    <picture>
+      <source srcset="../img/profil_portfolio.png" type="image/avif">
+      <img class="profil-boutton" src="../img/profil_portfolio.png" alt="">
+    </picture>
   </a>
 </nav>
 
@@ -40,7 +44,7 @@
     <h1 class="page-title">Social Design</h1>
   </div>
 
-  
+  <!-- Projet Prima Scherzo -->
   <div class="projet-bloc">
     <div class="projet-header">
       <span class="projet-name">Prima Scherzo</span>
@@ -51,20 +55,29 @@
     </div>
 
     <div class="projet-grid layout-3">
-
+      <!-- OPTIMISATION : toutes les images galerie — lazy, déjà en avif -->
       <div class="cell ratio-post">
-        <img src="../img/prima-post/post3-prima.avif" alt="Post4">
+        <picture>
+          <source srcset="../img/prima-post/post3-prima.avif" type="image/avif">
+          <img src="../img/prima-post/post3-prima.avif" alt="Prima post 3" loading="lazy">
+        </picture>
       </div>
       <div class="cell ratio-post">
-         <img src="../img/prima-post/affiche-prima-standup.avif" alt="Post5">
+        <picture>
+          <source srcset="../img/prima-post/affiche-prima-standup.avif" type="image/avif">
+          <img src="../img/prima-post/affiche-prima-standup.avif" alt="Affiche stand-up Prima" loading="lazy">
+        </picture>
       </div>
       <div class="cell ratio-square">
-        <img src="../img/prima-post/post1.avif" alt="Post 1">
+        <picture>
+          <source srcset="../img/prima-post/post1.avif" type="image/avif">
+          <img src="../img/prima-post/post1.avif" alt="Prima post 1" loading="lazy">
+        </picture>
       </div>
-
-</div>
+    </div>
   </div>
 
+  <!-- Projet Agate -->
   <div class="projet-bloc">
     <div class="projet-header">
       <span class="projet-name">Agate</span>
@@ -77,42 +90,70 @@
     <div class="projet-grid layout-mixed">
 
       <div class="cell ratio-portrait">
-        <img src="../img/agate-post/affiche-pearl.avif" alt="Story 1">
+        <picture>
+          <source srcset="../img/agate-post/affiche-pearl.avif" type="image/avif">
+          <img src="../img/agate-post/affiche-pearl.avif" alt="Affiche Agate Pearl" loading="lazy">
+        </picture>
       </div>
 
       <div class="cell ratio-portrait">
-          <img src="../img/agate-post/affiche-bf.avif" alt="">
+        <picture>
+          <source srcset="../img/agate-post/affiche-bf.avif" type="image/avif">
+          <img src="../img/agate-post/affiche-bf.avif" alt="Affiche Agate BF" loading="lazy">
+        </picture>
       </div>
+
       <div class="cell-stack">
-        <div class="cell ratio-landscape video1">
-          <img class="video1" src="../img/agate-post/miniature-1-youtube.avif" alt="Post 1">
+        <div class="cell ratio-landscape">
+          <picture>
+            <source srcset="../img/agate-post/miniature-1-youtube.avif" type="image/avif">
+            <img src="../img/agate-post/miniature-1-youtube.avif" alt="Miniature YouTube 1" loading="lazy">
+          </picture>
         </div>
         <div class="cell ratio-landscape">
-          <img class="video2" src="../img/agate-post/miniature-2-youtube.avif" alt="Post 2">
+          <picture>
+            <source srcset="../img/agate-post/miniature-2-youtube.avif" type="image/avif">
+            <img src="../img/agate-post/miniature-2-youtube.avif" alt="Miniature YouTube 2" loading="lazy">
+          </picture>
         </div>
         <div class="cell ratio-landscape">
-          <img class="video2" src="../img/agate-post/MINIIATURE-3-PHOTOSHOP.avif" alt="Post 3">
+          <picture>
+            <source srcset="../img/agate-post/MINIIATURE-3-PHOTOSHOP.avif" type="image/avif">
+            <img src="../img/agate-post/MINIIATURE-3-PHOTOSHOP.avif" alt="Miniature Photoshop 3" loading="lazy">
+          </picture>
         </div>
       </div>
 
     </div>
   </div>
-<div class="banniere-last">
-        <a href="https://www.linkedin.com/in/neyjah-bernos-a967b3349/">
-          <img class="ln-icon" src="../img/linkdin.png" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/neyjahbernos">
-          <img class="github-icon" src="../img/Boutton-github.png" alt="GitHub">
-        </a>
-          <a href="https://www.instagram.com/narodoro/">
-            <img class="insta-icon" src="../img/INSTA.png" alt="Instagram">
-        </a>
-        <a href="https://www.behance.net/neyjahbernos1">
-          <img class="behance-icon" src="../img/Bouton-behance.png" alt="behance">
-        </a>
-    </div>
- 
- 
+
+  <div class="banniere-last">
+    <a href="https://www.linkedin.com/in/neyjah-bernos-a967b3349/">
+      <picture>
+        <source srcset="../img/linkdin.png" type="image/avif">
+        <img class="ln-icon" src="../img/linkdin.png" alt="LinkedIn" loading="lazy">
+      </picture>
+    </a>
+    <a href="https://github.com/neyjahbernos">
+      <picture>
+        <source srcset="../img/Boutton-github.png" type="image/avif">
+        <img class="github-icon" src="../img/Boutton-github.png" alt="GitHub" loading="lazy">
+      </picture>
+    </a>
+    <a href="https://www.instagram.com/narodoro/">
+      <picture>
+        <source srcset="../img/INSTA.png" type="image/avif">
+        <img class="insta-icon" src="../img/INSTA.png" alt="Instagram" loading="lazy">
+      </picture>
+    </a>
+    <a href="https://www.behance.net/neyjahbernos1">
+      <picture>
+        <source srcset="../img/Bouton-behance.png" type="image/avif">
+        <img class="behance-icon" src="../img/Bouton-behance.png" alt="Behance" loading="lazy">
+      </picture>
+    </a>
+  </div>
+
 </div>
 
 </body>

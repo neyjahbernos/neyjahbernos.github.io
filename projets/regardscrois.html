@@ -10,7 +10,7 @@
 <body>
 
   <div class="little-rounded-rect">
-        <p class="text-rect"> projet en cours ...</p>
+    <p class="text-rect"> projet en cours ...</p>
   </div>
 
 <div class="page">
@@ -19,7 +19,11 @@
 
   <div class="hero-section">
     <div class="hero-left">
-      <img src="../img/whiteregardcrois.png" alt="Nom du Projet" class="project-title-img" />
+      <!-- OPTIMISATION : logo hero — critique, fetchpriority high -->
+      <picture>
+        <source srcset="../img/whiteregardcrois.png" type="image/avif">
+        <img src="../img/whiteregardcrois.png" alt="Regards Croisés" class="project-title-img" fetchpriority="high">
+      </picture>
     </div>
     <div class="hero-right">
       <p class="hero-description">
@@ -49,26 +53,61 @@
     </div>
   </div>
 
-
   <div class="gallery">
 
     <div class="img-full">
-      <div class="img-placeholder"><img class="firstimage" src="../img/regards-crois/horizontal.avif" alt="1"></div>
+      <div class="img-placeholder">
+        <!-- OPTIMISATION : toutes les images galerie — lazy -->
+        <picture>
+          <source srcset="../img/regards-crois/horizontal.avif" type="image/avif">
+          <img class="firstimage" src="../img/regards-crois/horizontal.avif" alt="Regards Croisés horizontal" loading="lazy">
+        </picture>
+      </div>
     </div>
 
     <div class="img-duo">
-      <div class="img-placeholder"><img class="firstimage" src="../img/regards-crois/1x/zone.png" alt="1"></div>
-      <div class="img-placeholder"><img class="firstimage" src="../img/regards-crois/stylo.avif" alt="1"></div>
+      <div class="img-placeholder">
+        <picture>
+          <source srcset="../img/regards-crois/1x/zone.png" type="image/avif">
+          <img class="firstimage" src="../img/regards-crois/1x/zone.png" alt="Zone Regards Croisés" loading="lazy">
+        </picture>
+      </div>
+      <div class="img-placeholder">
+        <picture>
+          <source srcset="../img/regards-crois/stylo.avif" type="image/avif">
+          <img class="firstimage" src="../img/regards-crois/stylo.avif" alt="Stylo Regards Croisés" loading="lazy">
+        </picture>
+      </div>
     </div>
 
     <div class="img-asymmetric">
-      <div class="img-placeholder"><img class="theimage" src="../img/regards-crois/mascotte.avif" alt="1"></div>
-      <div class="img-placeholder portrait"><img class="firstimage" src="../img/regards-crois/kakémono.avif" alt="1"></div>
+      <div class="img-placeholder">
+        <picture>
+          <source srcset="../img/regards-crois/mascotte.avif" type="image/avif">
+          <img class="theimage" src="../img/regards-crois/mascotte.avif" alt="Mascotte Regards Croisés" loading="lazy">
+        </picture>
+      </div>
+      <div class="img-placeholder portrait">
+        <picture>
+          <source srcset="../img/regards-crois/kakémono.avif" type="image/avif">
+          <img class="firstimage" src="../img/regards-crois/kakémono.avif" alt="Kakémono Regards Croisés" loading="lazy">
+        </picture>
+      </div>
     </div>
 
     <div class="img-asymmetric reverse">
-      <div class="img-placeholder portrait"><img class="firstimage" src="../img/regards-crois/mockub bag.avif" alt="1"></div>
-      <div class="img-placeholder"><img class="firstimage" src="../img/regards-crois/typo.avif" alt="1"></div>
+      <div class="img-placeholder portrait">
+        <picture>
+          <source srcset="../img/regards-crois/mockub bag.avif" type="image/avif">
+          <img class="firstimage" src="../img/regards-crois/mockub bag.avif" alt="Mockup sac Regards Croisés" loading="lazy">
+        </picture>
+      </div>
+      <div class="img-placeholder">
+        <picture>
+          <source srcset="../img/regards-crois/typo.avif" type="image/avif">
+          <img class="firstimage" src="../img/regards-crois/typo.avif" alt="Typographie Regards Croisés" loading="lazy">
+        </picture>
+      </div>
     </div>
 
   </div>

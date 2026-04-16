@@ -15,7 +15,11 @@
 
   <div class="hero-section">
     <div class="hero-left">
-      <img  class="prima-fondd"src="../img/prima-post/Fichier 4.png" alt="Nom du Projet" class="project-title-img" />
+      <!-- OPTIMISATION : logo hero — critique, pas de lazy -->
+      <picture>
+        <source srcset="../img/prima-post/Fichier 4.avif" type="image/avif">
+        <img class="prima-fondd" src="../img/prima-post/Fichier 4.png" alt="Prima Scherzo" class="project-title-img" fetchpriority="high">
+      </picture>
     </div>
     <div class="hero-right">
       <p class="hero-description">
@@ -45,24 +49,56 @@
   <div class="gallery">
 
     <div class="img-full">
-      <div class="img-placeholder"><video class="video1" src="../video/good-one.mp4" autoplay loop muted playsinline></video></div>
+      <div class="img-placeholder">
+        <!-- OPTIMISATION : vidéo — preload="none" évite de charger la vidéo au démarrage -->
+        <!-- poster affiche une image statique à la place pendant le chargement -->
+        <video class="video1" src="../video/good-one.mp4" 
+               autoplay loop muted playsinline 
+               preload="none"
+               poster="../img/prima-post/Color.avif">
+        </video>
+      </div>
     </div>
 
     <div class="img-duo">
-      <div class="img-placeholder"><img src="../img/prima-post/MENU BOISSONS PRIMA Scherzo.avif"> </div>
-      <div class="img-placeholder"><img src="../img/prima-post/zone-prima.avif"></div>
+      <div class="img-placeholder">
+        <!-- OPTIMISATION : toutes les images galerie — lazy car hors viewport -->
+        <picture>
+          <source srcset="../img/prima-post/MENU BOISSONS PRIMA Scherzo.avif" type="image/avif">
+          <img src="../img/prima-post/MENU BOISSONS PRIMA Scherzo.avif" alt="Menu boissons Prima Scherzo" loading="lazy">
+        </picture>
+      </div>
+      <div class="img-placeholder">
+        <picture>
+          <source srcset="../img/prima-post/zone-prima.avif" type="image/avif">
+          <img src="../img/prima-post/zone-prima.avif" alt="Zone Prima" loading="lazy">
+        </picture>
+      </div>
     </div>
 
     <div class="img-asymmetric">
-      <div class="img-placeholder"><img src="../img/prima-post/Color.avif"></div>
-      <div class="img-placeholder portrait"><img src="../img/prima-post/typo.avif"></div>
+      <div class="img-placeholder">
+        <picture>
+          <source srcset="../img/prima-post/Color.avif" type="image/avif">
+          <img src="../img/prima-post/Color.avif" alt="Palette couleurs Prima" loading="lazy">
+        </picture>
+      </div>
+      <div class="img-placeholder portrait">
+        <picture>
+          <source srcset="../img/prima-post/typo.avif" type="image/avif">
+          <img src="../img/prima-post/typo.avif" alt="Typographie Prima" loading="lazy">
+        </picture>
+      </div>
     </div>
 
     <div class="img-full">
-      <div class="img-placeholder"><img src="../img/prima-post/image-draw.avif"></div>
+      <div class="img-placeholder">
+        <picture>
+          <source srcset="../img/prima-post/image-draw.avif" type="image/avif">
+          <img src="../img/prima-post/image-draw.avif" alt="Illustration Prima" loading="lazy">
+        </picture>
+      </div>
     </div>
-
-  
 
   </div>
 

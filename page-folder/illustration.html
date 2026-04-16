@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="../css/style3.css">
   <link rel="icon" type="image/png" sizes="42x42" href="profil_portfolio.png">
   <link rel="stylesheet" href="https://use.typekit.net/bwf0pby.css">
-  
-  
 </head>
 <body>
 
@@ -19,140 +17,167 @@
   </header>
 
   <a href="../index.html">
-     <img class="profil-boutton" src="..\img\profil_portfolio.png" alt="Logo profil">
+    <!-- OPTIMISATION : logo nav — critique, pas de lazy -->
+    <picture>
+      <source srcset="../img/profil_portfolio.png" type="image/avif">
+      <img class="profil-boutton" src="../img/profil_portfolio.png" alt="Logo profil">
+    </picture>
   </a>
 
-    <div class="online-round"></div>
-        <div class="little-rounded-rect">
-            <p class="projets-en-cours">2 projets en cours</p>
-            </div>
-    <div class="projects-list">
-        <a class="project-card">
-          <div class="card-inner">
-            <div class="card-img">
-              <img class="primadesktop" src="../img/prima-post/primahorizontaldraw.avif " alt="">
-              <img class="primamobile" src="../img/prima-post/verticalprima.avif" alt="">
-            </div>
-            <div class="card-img">
-              <span class="emoji"></span>
-            </div>
-            <div class="card-info">
-              <div>
-                <div class="card-meta">
-                  <span class="card-year"></span>
-                  <span class="card-dot"></span>
-                  <span class="card-tag"></span>
-                </div>
-                <div class="card-title">${p.title}</div>
-                <div class="card-desc">${p.shortDesc}</div>
-              </div>
-              <div class="card-info-bottom">
-                <div class="card-skills">
-                  ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
-                </div>
-                <span class="card-status ${p.status}">${p.statusLabel}</span>
-              </div>
-              <span class="card-arrow">→</span>
-            </div>
-          </div>
-        </a>
+  <div class="online-round"></div>
+  <div class="little-rounded-rect">
+    <p class="projets-en-cours">2 projets en cours</p>
+  </div>
 
-        <a class="project-card">
-          <div class="card-inner">
-            <div class="card-img3">
-              <img class="agatedesktop" src="../img/agate-post/agatedraw.avif" alt="">
-              <img class="agatemobile" src="../img/agate-post/verticalagate.avif" alt="">
-            </div>
-            <div class="card-img">
-              <span class="emoji"></span>
-            </div>
-            <div class="card-info">
-              <div>
-                <div class="card-meta">
-                  <span class="card-year"></span>
-                  <span class="card-dot"></span>
-                  <span class="card-tag"></span>
-                </div>
-                <div class="card-title">${p.title}</div>
-                <div class="card-desc">${p.shortDesc}</div>
-              </div>
-              <div class="card-info-bottom">
-                <div class="card-skills">
-                  ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
-                </div>
-                <span class="card-status ${p.status}">${p.statusLabel}</span>
-              </div>
-              <span class="card-arrow">→</span>
-            </div>
-          </div>
-        </a>
+  <div class="projects-list">
 
-
-        <a class="project-card" href="${p.link}">
-          <div class="card-inner">
-            <div class="card-img">
-               <img class="anna anna-desktop" src="../img/IMGcard1anna.png" alt="">
-              <img class="anna-mobile" src="../img/IMGannavertical.png" alt="">
-            
+    <!-- Carte Prima illustration -->
+    <a class="project-card">
+      <div class="card-inner">
+        <div class="card-img">
+          <!-- OPTIMISATION : images desktop/mobile — lazy -->
+          <picture>
+            <source srcset="../img/prima-post/primahorizontaldraw.avif" type="image/avif">
+            <img class="primadesktop" src="../img/prima-post/primahorizontaldraw.avif" alt="Prima Scherzo illustration desktop" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="../img/prima-post/verticalprima.avif" type="image/avif">
+            <img class="primamobile" src="../img/prima-post/verticalprima.avif" alt="Prima Scherzo illustration mobile" loading="lazy">
+          </picture>
+        </div>
+        <div class="card-info">
+          <div>
+            <div class="card-meta">
+              <span class="card-year"></span>
+              <span class="card-dot"></span>
+              <span class="card-tag"></span>
             </div>
-            <div class="card-img">
-              <span class="emoji"></span>
-            </div>
-            <div class="card-info">
-              <div>
-                <div class="card-meta">
-                  <span class="card-year"></span>
-                  <span class="card-dot"></span>
-                  <span class="card-tag"></span>
-                </div>
-                <div class="card-title">${p.title}</div>
-                <div class="card-desc">${p.shortDesc}</div>
-              </div>
-              <div class="card-info-bottom">
-                <div class="card-skills">
-                  ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
-                </div>
-                <span class="card-status ${p.status}">${p.statusLabel}</span>
-              </div>
-              <span class="card-arrow">→</span>
-            </div>
+            <div class="card-title">${p.title}</div>
+            <div class="card-desc">${p.shortDesc}</div>
           </div>
-        </a>
-    </div>
+          <div class="card-info-bottom">
+            <div class="card-skills">
+              ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
+            </div>
+            <span class="card-status ${p.status}">${p.statusLabel}</span>
+          </div>
+          <span class="card-arrow">→</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Carte Agate illustration -->
+    <a class="project-card">
+      <div class="card-inner">
+        <div class="card-img3">
+          <picture>
+            <source srcset="../img/agate-post/agatedraw.avif" type="image/avif">
+            <img class="agatedesktop" src="../img/agate-post/agatedraw.avif" alt="Agate illustration desktop" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="../img/agate-post/verticalagate.avif" type="image/avif">
+            <img class="agatemobile" src="../img/agate-post/verticalagate.avif" alt="Agate illustration mobile" loading="lazy">
+          </picture>
+        </div>
+        <div class="card-info">
+          <div>
+            <div class="card-meta">
+              <span class="card-year"></span>
+              <span class="card-dot"></span>
+              <span class="card-tag"></span>
+            </div>
+            <div class="card-title">${p.title}</div>
+            <div class="card-desc">${p.shortDesc}</div>
+          </div>
+          <div class="card-info-bottom">
+            <div class="card-skills">
+              ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
+            </div>
+            <span class="card-status ${p.status}">${p.statusLabel}</span>
+          </div>
+          <span class="card-arrow">→</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Carte Anna -->
+    <a class="project-card" href="${p.link}">
+      <div class="card-inner">
+        <div class="card-img">
+          <picture>
+            <source srcset="../img/IMGcard1anna.png" type="image/avif">
+            <img class="anna anna-desktop" src="../img/IMGcard1anna.png" alt="Projet Anna desktop" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="../img/IMGannavertical.png" type="image/avif">
+            <img class="anna-mobile" src="../img/IMGannavertical.png" alt="Projet Anna mobile" loading="lazy">
+          </picture>
+        </div>
+        <div class="card-info">
+          <div>
+            <div class="card-meta">
+              <span class="card-year"></span>
+              <span class="card-dot"></span>
+              <span class="card-tag"></span>
+            </div>
+            <div class="card-title">${p.title}</div>
+            <div class="card-desc">${p.shortDesc}</div>
+          </div>
+          <div class="card-info-bottom">
+            <div class="card-skills">
+              ${p.skills.slice(0, 3).map(s => `<span class="skill-pill">${s}</span>`).join('')}
+            </div>
+            <span class="card-status ${p.status}">${p.statusLabel}</span>
+          </div>
+          <span class="card-arrow">→</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
 
   <div class="filters">
     <a href="branding.html">
-        <button class="filter-btn" onclick="filterProjects('all', this)">Branding</button>
+      <button class="filter-btn" onclick="filterProjects('all', this)">Branding</button>
     </a>
     <a href="socialdesign.html">
-        <button class="filter-btn" onclick="filterProjects('web', this)">social design</button>
+      <button class="filter-btn" onclick="filterProjects('web', this)">social design</button>
     </a>
     <a href="illustration.html">
-       <button class="filter-btn active" onclick="filterProjects('design', this)">animation et illustration</button>
+      <button class="filter-btn active" onclick="filterProjects('design', this)">animation et illustration</button>
     </a>
     <a href="dev-page.html">
-        <button class="filter-btn" onclick="filterProjects('gestion', this)">Dev/web</button>
+      <button class="filter-btn" onclick="filterProjects('gestion', this)">Dev/web</button>
     </a>
   </div>
 
-  
   <div class="Titouan">
     <a href="https://www.linkedin.com/in/neyjah-bernos-a967b3349/">
-      <img class="ln-icon" src="../img/linkdin.png" alt="LinkedIn">
+      <picture>
+        <source srcset="../img/linkdin.png" type="image/avif">
+        <img class="ln-icon" src="../img/linkdin.png" alt="LinkedIn" loading="lazy">
+      </picture>
     </a>
     <a href="https://github.com/neyjahbernos">
-      <img class="github-icon" src="../img/Boutton-github.png" alt="GitHub">
+      <picture>
+        <source srcset="../img/Boutton-github.png" type="image/avif">
+        <img class="github-icon" src="../img/Boutton-github.png" alt="GitHub" loading="lazy">
+      </picture>
     </a>
-      <a href="https://www.instagram.com/narodoro/">
-        <img class="insta-icon" src="../img/INSTA.png" alt="Instagram">
+    <a href="https://www.instagram.com/narodoro/">
+      <picture>
+        <source srcset="../img/INSTA.png" type="image/avif">
+        <img class="insta-icon" src="../img/INSTA.png" alt="Instagram" loading="lazy">
+      </picture>
     </a>
-     <a href="" target="_blank" rel="noopener noreferrer">
-        <img class="behance-icon" src="img/Bouton-behance.png" alt="bahance">
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <picture>
+        <source srcset="../img/Bouton-behance.png" type="image/avif">
+        <img class="behance-icon" src="../img/Bouton-behance.png" alt="Behance" loading="lazy">
+      </picture>
     </a>
   </div>
-  
- 
-  
+
   <script src="ver.js"></script>
 </body>
 </html>

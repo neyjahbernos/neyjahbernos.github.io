@@ -15,7 +15,11 @@
 
   <div class="hero-section">
     <div class="hero-left">
-      <img src="../img/agate-post/Agatelogo.avif" alt="Nom du Projet" class="project-title-img" />
+      <!-- OPTIMISATION : logo hero — critique, fetchpriority high -->
+      <picture>
+        <source srcset="../img/agate-post/Agatelogo.avif" type="image/avif">
+        <img src="../img/agate-post/Agatelogo.png" alt="Logo Agate Ethikwear" class="project-title-img" fetchpriority="high">
+      </picture>
     </div>
     <div class="hero-right">
       <p class="hero-description">
@@ -25,13 +29,9 @@
        <a href="https://b2crea8.projet-cours.fr/"> aller voir le site</a>
       </p>
       <div class="project-meta">
-        <div class="meta-item">
-        </div>
-        <div class="meta-item">
-         
-        </div>
-        <div class="meta-item">
-        </div>
+        <div class="meta-item"></div>
+        <div class="meta-item"></div>
+        <div class="meta-item"></div>
       </div>
     </div>
   </div>
@@ -39,26 +39,57 @@
   <div class="gallery">
 
     <div class="img-full">
-      <img class="firstimage" src="../img/12.png" alt="1">
+      <!-- OPTIMISATION : première image galerie — lazy (sous le hero) -->
+      <picture>
+        <source srcset="../img/12.png" type="image/avif">
+        <img class="firstimage" src="../img/12.png" alt="Agate visuel 1" loading="lazy">
+      </picture>
     </div>
 
     <div class="img-duo">
-      <img class="secondimage" src="../img/5.png" alt="2">
-      <img class="thirdimage" src="../img/14.png" alt="3">
+      <picture>
+        <source srcset="../img/5.png" type="image/avif">
+        <img class="secondimage" src="../img/5.png" alt="Agate visuel 2" loading="lazy">
+      </picture>
+      <picture>
+        <source srcset="../img/14.png" type="image/avif">
+        <img class="thirdimage" src="../img/14.png" alt="Agate visuel 3" loading="lazy">
+      </picture>
     </div>
 
     <div class="img-asymmetric">
-      <div class="img-placeholder"><img src="../img/6.png" alt="2"></div>
-      <div class="img-placeholder portrait"><img src="../img/18.png" alt="2"></div>
+      <div class="img-placeholder">
+        <picture>
+          <source srcset="../img/6.png" type="image/avif">
+          <img src="../img/6.png" alt="Agate visuel 4" loading="lazy">
+        </picture>
+      </div>
+      <div class="img-placeholder portrait">
+        <picture>
+          <source srcset="../img/18.png" type="image/avif">
+          <img src="../img/18.png" alt="Agate visuel 5" loading="lazy">
+        </picture>
+      </div>
     </div>
 
     <div class="img-full">
-      <div class="img-placeholder"><img src="../img/8.png" alt="2"></div>
+      <div class="img-placeholder">
+        <picture>
+          <source srcset="../img/8.png" type="image/avif">
+          <img src="../img/8.png" alt="Agate visuel 6" loading="lazy">
+        </picture>
+      </div>
     </div>
 
     <div class="img-duo">
-      <img class="secondimage" src="../img/9.png" alt="2">
-      <img class="thirdimage" src="../img/10.png" alt="3">
+      <picture>
+        <source srcset="../img/9.png" type="image/avif">
+        <img class="secondimage" src="../img/9.png" alt="Agate visuel 7" loading="lazy">
+      </picture>
+      <picture>
+        <source srcset="../img/10.png" type="image/avif">
+        <img class="thirdimage" src="../img/10.png" alt="Agate visuel 8" loading="lazy">
+      </picture>
     </div>
 
   </div>
