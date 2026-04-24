@@ -722,7 +722,7 @@ body {
     margin-top: 5vh;
 }
 
-.github-icon, .ln-icon, .insta-icon {
+.github-icon, .ln-icon, .insta-icon, .behance-icon{
     position: static;
     margin-bottom: 10vh;
     width: clamp(40px, 10vw, 60px);
