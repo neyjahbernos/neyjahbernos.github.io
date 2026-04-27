@@ -1,7 +1,7 @@
 function scrollToContact(sectionId) {
     const targetElement = document.getElementById(sectionId);
     const navBar = document.getElementById('ma-barre-nav-fixe');
-    const headerHeight = 50;
+    const headerHeight = -80;
 
 if (targetElement) {
         const elementPosition = targetElement.getBoundingClientRect().top;     

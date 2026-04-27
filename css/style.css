@@ -29,7 +29,6 @@ html, body {
       font-weight: 300;
     }
  
-    /* TRACK — scroll snap */
     .track {
       display: flex;
       overflow-x: auto;
@@ -39,14 +38,12 @@ html, body {
       border-radius: 4px;
       box-shadow: 4px 4px 0 #553a04;
       cursor: grab;
-      /* Cache la scrollbar */
       scrollbar-width: none;
     }
  
     .track::-webkit-scrollbar { display: none; }
     .track:active { cursor: grabbing; }
  
-    /* SLIDE */
     .slide {
       flex: 0 0 100%;
       scroll-snap-align: start;
@@ -132,7 +129,6 @@ html, body {
     .slide-action:hover { background: #e8e0d0; color:#3c2902 }
     .slide-action:active { transform: translate(2px, 2px); box-shadow: none; }
  
-    /* DOTS — liens ancres */
     .dots {
       display: flex;
       justify-content: center;
@@ -811,6 +807,8 @@ body {
     .menu {
         width: 40%;
     }
+
+   
 }
 
 @media screen and (max-width: 768px) {
@@ -818,6 +816,16 @@ body {
     .body {
         margin: 0;
         height: 200vh;
+    }
+    .carousel-wrap {
+        display : none; 
+    }
+
+    .track {
+        display : none;
+    }
+    .carousel-header {
+        display : none ;
     }
 
     .portfolio-text {
@@ -986,6 +994,11 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+
+.carousel-wrap {
+        display : none; 
+    }
+
     .profil-boutton {
         width: clamp(50px, 15vw, 80px);
     }
