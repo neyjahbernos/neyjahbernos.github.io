@@ -49,8 +49,6 @@
 
     <div class="img-full">
       <div class="img-placeholder">
-        <!-- OPTIMISATION : vidéo — preload="none" évite de charger la vidéo au démarrage -->
-        <!-- poster affiche une image statique à la place pendant le chargement -->
         <video class="video1" src="../video/good-one.mp4" 
                controls loop muted playsinline 
                poster="../img/prima-post/primacardhorizontal.avif">
@@ -60,7 +58,6 @@
 
     <div class="img-duo">
       <div class="img-placeholder">
-        <!-- OPTIMISATION : toutes les images galerie — lazy car hors viewport -->
         <picture>
           <source srcset="../img/prima-post/MENU BOISSONS PRIMA Scherzo.avif" type="image/avif">
           <img src="../img/prima-post/MENU BOISSONS PRIMA Scherzo.avif" alt="Menu boissons Prima Scherzo" loading="lazy">
