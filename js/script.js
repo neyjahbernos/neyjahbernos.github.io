@@ -47,13 +47,16 @@ window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
   const img = document.getElementById('loader-img');
 
-  img.classList.add('done');
-  loader.classList.add('hide');
-
   setTimeout(() => {
-    loader.style.display = 'none';
-    document.getElementById('main-content').style.display = 'block';
-  }, 400); // juste le temps de l'animation CSS
+    img.classList.add('done');
+    loader.classList.add('hide');
+
+    setTimeout(() => {
+      loader.style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+    }, 400);
+
+  }, 2000); // ← change cette valeur en ms
 });
 
 const burger = document.getElementById("burger");
