@@ -56,7 +56,7 @@ window.addEventListener('load', () => {
       document.getElementById('main-content').style.display = 'block';
     }, 400);
 
-  }, 2000); // ← change cette valeur en ms
+  }, 1000); 
 });
 
 const burger = document.getElementById("burger");
