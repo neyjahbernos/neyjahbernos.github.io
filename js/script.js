@@ -43,7 +43,21 @@ if (targetElement) {
 }
 
 // fonction générée par ia v
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  const img = document.getElementById('loader-img');
 
+  setTimeout(() => {
+    img.classList.add('done');
+    loader.classList.add('hide');
+
+    setTimeout(() => {
+      loader.style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+    }, 400);
+
+  }, 1000); 
+});
 
 const burger = document.getElementById("burger");
 const menu = document.querySelector(".menu");
