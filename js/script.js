@@ -43,21 +43,41 @@ if (targetElement) {
 }
 
 // fonction générée par ia v
-window.addEventListener('load', () => {
+const criticalImages = [
+  document.querySelector('.en-tete'),
+  document.querySelector('.portfolio-text'),
+  document.querySelector('.round-profile'),
+  document.querySelector('.bandetournante'),
+
+];
+
+function hideLoader() {
   const loader = document.getElementById('loader');
   const img = document.getElementById('loader-img');
-
+  img.classList.add('done');
+  loader.classList.add('hide');
   setTimeout(() => {
-    img.classList.add('done');
-    loader.classList.add('hide');
+    loader.style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+  }, 400);
+}
 
-    setTimeout(() => {
-      loader.style.display = 'none';
-      document.getElementById('main-content').style.display = 'block';
-    }, 400);
-
-  }, 1000); 
+let loaded = 0;
+criticalImages.forEach(img => {
+  if (!img) { loaded++; return; }
+  if (img.complete) {
+    loaded++;
+    if (loaded >= criticalImages.length) hideLoader();
+  } else {
+    img.addEventListener('load', () => {
+      loaded++;
+      if (loaded >= criticalImages.length) hideLoader();
+    });
+  }
 });
+
+// Sécurité : cacher après 4s max quoi qu'il arrive
+setTimeout(hideLoader, 1000);
 
 const burger = document.getElementById("burger");
 const menu = document.querySelector(".menu");
