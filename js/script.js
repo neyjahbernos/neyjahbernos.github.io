@@ -77,7 +77,7 @@ criticalImages.forEach(img => {
 });
 
 // Sécurité : cacher après 4s max quoi qu'il arrive
-setTimeout(hideLoader, 1000);
+setTimeout(hideLoader, 4000);
 
 const burger = document.getElementById("burger");
 const menu = document.querySelector(".menu");
